@@ -1,10 +1,42 @@
-node_modules
+# Git
 .git
-.github
-.vscode
+.gitignore
+
+# Node
+node_modules
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
 .env
 .env.local
+.env.*.local
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Build outputs (kecuali dist)
 coverage
 .nyc_output
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# Vercel
+.vercel
