@@ -227,7 +227,12 @@ async function loadFromPrismaDatabase() {
 }
 
 // Try to load any previously saved shortlinks or configuration from working disk if present
-const DATA_FILE = path.join(process.cwd(), "dashboard_data.json");
+// FIX: Use /tmp for Vercel production
+const DATA_FILE = path.join(
+  process.env.NODE_ENV === 'production' ? '/tmp' : process.cwd(),
+  "dashboard_data.json"
+);
+
 if (fs.existsSync(DATA_FILE)) {
   try {
     const rawData = fs.readFileSync(DATA_FILE, "utf-8");
@@ -549,26 +554,45 @@ async function initializeApp() {
   // 2. Load initial settings and shortlinks from Prisma PostgreSQL/Supabase if configured
   await loadFromPrismaDatabase();
 
-  if (process.env.NODE_ENV !== "production") {
+  // 3. Setup static files untuk production
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist");
+    // Cek apakah dist folder ada
+    if (fs.existsSync(distPath)) {
+      app.use(express.static(distPath));
+      app.get("*", (req, res) => {
+        res.sendFile(path.join(distPath, "index.html"));
+      });
+    } else {
+      console.warn("[VERCEL] dist folder not found, serving API only");
+    }
+  } else {
+    // Development mode dengan Vite
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
     });
-    // Mount Vite middleware after API routes
     app.use(vite.middlewares);
-  } else {
-    const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
   }
-
-  // app.listen(PORT, "0.0.0.0", () => {
-  //   console.log(`Server is running at http://0.0.0.0:${PORT}`);
-  // });
 }
 
-initializeApp().catch((err) => {
-  console.error("Critical: Initialization of App Failed", err);
-});
+// ====== KONFIGURASI UNTUK VERCEL ======
+// Panggil initializeApp untuk development
+if (process.env.NODE_ENV !== 'production') {
+  initializeApp().catch((err) => {
+    console.error("Critical: Initialization of App Failed", err);
+  });
+  
+  // Running di local
+  app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server is running at http://0.0.0.0:${PORT}`);
+  });
+} else {
+  // Production: inisialisasi async tanpa blocking
+  initializeApp().catch((err) => {
+    console.error("[VERCEL] Initialization failed:", err);
+  });
+}
+
+// Export app untuk Vercel
+export default app;

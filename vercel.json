@@ -26,9 +26,6 @@
       "dest": "/server.ts"
     }
   ],
-  "env": {
-    "NODE_ENV": "production"
-  },
   "functions": {
     "server.ts": {
       "maxDuration": 60,
