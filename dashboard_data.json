@@ -1,0 +1,8991 @@
+{
+  "shortlinks": [
+    {
+      "id": "sl-1780730231155-43v3m",
+      "originalUrl": "https://shopee.co.id/SKMEI-1673-Jam-Tangan-Pria-Digital-Analog-Chronograph-Dual-Time-Anti-Air-MGOS-i.93625713.10056917277?extraParams=%7B%22display_model_id%22%3A131078488387%2C%22model_selection_logic%22%3A3%7D",
+      "zoneId": "200000",
+      "platform": "PropellerAds",
+      "market": "id",
+      "shortlink": "http://localhost:3000/r?url=https%3A%2F%2Fshopee.co.id%2FSKMEI-1673-Jam-Tangan-Pria-Digital-Analog-Chronograph-Dual-Time-Anti-Air-MGOS-i.93625713.10056917277%3FextraParams%3D%257B%2522display_model_id%2522%253A131078488387%252C%2522model_selection_logic%2522%253A3%257D&sub1=200000&sub2=PropellerAds&market=id",
+      "createdAt": "2026-06-06T07:17:11.155Z"
+    }
+  ],
+  "globalUsdRate": 18000,
+  "uploadedFiles": [
+    {
+      "id": "file-1780729941501-ziikv",
+      "filename": "AffiliateCommissionReport_202605220845 (1).csv",
+      "fileType": "shopee_id",
+      "rowCount": 357,
+      "platform": "PropellerAds",
+      "uploadedAt": "2026-06-06T07:12:21.501Z",
+      "data": [
+        {
+          "zoneId": "1791753",
+          "commissionIdr": 16390.8,
+          "orders": 1
+        },
+        {
+          "zoneId": "1890368",
+          "commissionIdr": 420,
+          "orders": 1
+        },
+        {
+          "zoneId": "1983091",
+          "commissionIdr": 900,
+          "orders": 1
+        },
+        {
+          "zoneId": "2013573",
+          "commissionIdr": 33313.475,
+          "orders": 20
+        },
+        {
+          "zoneId": "2015694",
+          "commissionIdr": 2147.5,
+          "orders": 4
+        },
+        {
+          "zoneId": "2031149",
+          "commissionIdr": 3082.275,
+          "orders": 6
+        },
+        {
+          "zoneId": "2034295",
+          "commissionIdr": 12939.960000000003,
+          "orders": 13
+        },
+        {
+          "zoneId": "2035409",
+          "commissionIdr": 74066.75,
+          "orders": 26
+        },
+        {
+          "zoneId": "2052114",
+          "commissionIdr": 73798.56,
+          "orders": 5
+        },
+        {
+          "zoneId": "2052445",
+          "commissionIdr": 1925.2199999999998,
+          "orders": 4
+        },
+        {
+          "zoneId": "2067895",
+          "commissionIdr": 1364.25,
+          "orders": 2
+        },
+        {
+          "zoneId": "2072359",
+          "commissionIdr": 30001.3,
+          "orders": 15
+        },
+        {
+          "zoneId": "2078166",
+          "commissionIdr": 44965.82,
+          "orders": 23
+        },
+        {
+          "zoneId": "2078197",
+          "commissionIdr": 67070.08499999999,
+          "orders": 21
+        },
+        {
+          "zoneId": "2079115",
+          "commissionIdr": 16320,
+          "orders": 8
+        },
+        {
+          "zoneId": "2081964",
+          "commissionIdr": 3324.91,
+          "orders": 5
+        },
+        {
+          "zoneId": "2082665",
+          "commissionIdr": 825,
+          "orders": 2
+        },
+        {
+          "zoneId": "2084674",
+          "commissionIdr": 5467.764999999999,
+          "orders": 8
+        },
+        {
+          "zoneId": "2085290",
+          "commissionIdr": 8244.52,
+          "orders": 2
+        },
+        {
+          "zoneId": "2085370",
+          "commissionIdr": 10561.46995,
+          "orders": 14
+        },
+        {
+          "zoneId": "2086183",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "2086268",
+          "commissionIdr": 37156.295,
+          "orders": 21
+        },
+        {
+          "zoneId": "2087109",
+          "commissionIdr": 15895.525000000001,
+          "orders": 23
+        },
+        {
+          "zoneId": "2087191",
+          "commissionIdr": 13333.34,
+          "orders": 10
+        },
+        {
+          "zoneId": "2087694",
+          "commissionIdr": 66861.90499999998,
+          "orders": 37
+        },
+        {
+          "zoneId": "2089102",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "2090108",
+          "commissionIdr": 6160.135,
+          "orders": 8
+        },
+        {
+          "zoneId": "2090594",
+          "commissionIdr": 2362.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "2090611",
+          "commissionIdr": 22214.75,
+          "orders": 12
+        },
+        {
+          "zoneId": "2090615",
+          "commissionIdr": 2408.48,
+          "orders": 7
+        },
+        {
+          "zoneId": "2090617",
+          "commissionIdr": 11185.19,
+          "orders": 6
+        },
+        {
+          "zoneId": "2090619",
+          "commissionIdr": 1385.985,
+          "orders": 1
+        },
+        {
+          "zoneId": "2090908",
+          "commissionIdr": 1725.5,
+          "orders": 2
+        },
+        {
+          "zoneId": "2092300",
+          "commissionIdr": 44416.71000000001,
+          "orders": 20
+        },
+        {
+          "zoneId": "2092877",
+          "commissionIdr": 2539.355,
+          "orders": 1
+        },
+        {
+          "zoneId": "2092950",
+          "commissionIdr": 9066.31,
+          "orders": 14
+        },
+        {
+          "zoneId": "2093437",
+          "commissionIdr": 3340.83,
+          "orders": 5
+        },
+        {
+          "zoneId": "2094064",
+          "commissionIdr": 2763.135,
+          "orders": 1
+        },
+        {
+          "zoneId": "2094073",
+          "commissionIdr": 1175.33,
+          "orders": 1
+        },
+        {
+          "zoneId": "2094171",
+          "commissionIdr": 97636.84,
+          "orders": 33
+        },
+        {
+          "zoneId": "2095630",
+          "commissionIdr": 768.15,
+          "orders": 1
+        },
+        {
+          "zoneId": "2095635",
+          "commissionIdr": 10621.214999999998,
+          "orders": 7
+        },
+        {
+          "zoneId": "2095706",
+          "commissionIdr": 1132.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "2095708",
+          "commissionIdr": 54051.74998,
+          "orders": 17
+        },
+        {
+          "zoneId": "2095710",
+          "commissionIdr": 1326.56,
+          "orders": 1
+        },
+        {
+          "zoneId": "2095713",
+          "commissionIdr": 7844.25,
+          "orders": 8
+        },
+        {
+          "zoneId": "2095736",
+          "commissionIdr": 757,
+          "orders": 3
+        },
+        {
+          "zoneId": "2095776",
+          "commissionIdr": 68627.18,
+          "orders": 8
+        },
+        {
+          "zoneId": "2095778",
+          "commissionIdr": 1074.035,
+          "orders": 3
+        },
+        {
+          "zoneId": "2095780",
+          "commissionIdr": 15272.66,
+          "orders": 8
+        },
+        {
+          "zoneId": "2095783",
+          "commissionIdr": 4314.245,
+          "orders": 10
+        },
+        {
+          "zoneId": "2095787",
+          "commissionIdr": 5139.2,
+          "orders": 3
+        },
+        {
+          "zoneId": "2095792",
+          "commissionIdr": 5774.975,
+          "orders": 5
+        },
+        {
+          "zoneId": "2096471",
+          "commissionIdr": 14881.68,
+          "orders": 3
+        },
+        {
+          "zoneId": "2096474",
+          "commissionIdr": 1704.75,
+          "orders": 4
+        },
+        {
+          "zoneId": "2096481",
+          "commissionIdr": 181.5,
+          "orders": 2
+        },
+        {
+          "zoneId": "2096482",
+          "commissionIdr": 0,
+          "orders": 2
+        },
+        {
+          "zoneId": "2097058",
+          "commissionIdr": 31426.8,
+          "orders": 2
+        },
+        {
+          "zoneId": "2098228",
+          "commissionIdr": 24961.29,
+          "orders": 21
+        },
+        {
+          "zoneId": "2099940",
+          "commissionIdr": 4936.065,
+          "orders": 7
+        },
+        {
+          "zoneId": "2099962",
+          "commissionIdr": 2812.41,
+          "orders": 1
+        },
+        {
+          "zoneId": "2100610",
+          "commissionIdr": 532.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "2100941",
+          "commissionIdr": 3989.2200000000003,
+          "orders": 4
+        },
+        {
+          "zoneId": "2100988",
+          "commissionIdr": 1603.125,
+          "orders": 2
+        },
+        {
+          "zoneId": "2101217",
+          "commissionIdr": 26409.234999999997,
+          "orders": 18
+        },
+        {
+          "zoneId": "2101219",
+          "commissionIdr": 9240.645,
+          "orders": 4
+        },
+        {
+          "zoneId": "2101400",
+          "commissionIdr": 108783.22499999999,
+          "orders": 48
+        },
+        {
+          "zoneId": "2102178",
+          "commissionIdr": 27975.52,
+          "orders": 14
+        },
+        {
+          "zoneId": "2102380",
+          "commissionIdr": 35858.090000000004,
+          "orders": 18
+        },
+        {
+          "zoneId": "2102382",
+          "commissionIdr": 202637.92500000005,
+          "orders": 27
+        },
+        {
+          "zoneId": "2102384",
+          "commissionIdr": 51364.13,
+          "orders": 40
+        },
+        {
+          "zoneId": "2102386",
+          "commissionIdr": 36900.755,
+          "orders": 15
+        },
+        {
+          "zoneId": "2102500",
+          "commissionIdr": 23568.985000000004,
+          "orders": 22
+        },
+        {
+          "zoneId": "2102502",
+          "commissionIdr": 15388.944999999998,
+          "orders": 13
+        },
+        {
+          "zoneId": "2103240",
+          "commissionIdr": 494.42,
+          "orders": 1
+        },
+        {
+          "zoneId": "2104115",
+          "commissionIdr": 20150.106060000002,
+          "orders": 7
+        },
+        {
+          "zoneId": "2104314",
+          "commissionIdr": 247.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "2104316",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "2104978",
+          "commissionIdr": 7844.82,
+          "orders": 2
+        },
+        {
+          "zoneId": "2105616",
+          "commissionIdr": 1506.5,
+          "orders": 2
+        },
+        {
+          "zoneId": "2106304",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "2106818",
+          "commissionIdr": 2804.31,
+          "orders": 3
+        },
+        {
+          "zoneId": "2106827",
+          "commissionIdr": 17225.91,
+          "orders": 13
+        },
+        {
+          "zoneId": "2107138",
+          "commissionIdr": 344.32,
+          "orders": 1
+        },
+        {
+          "zoneId": "2107946",
+          "commissionIdr": 8962.14,
+          "orders": 2
+        },
+        {
+          "zoneId": "2107948",
+          "commissionIdr": 11058,
+          "orders": 1
+        },
+        {
+          "zoneId": "2107950",
+          "commissionIdr": 6970.02,
+          "orders": 4
+        },
+        {
+          "zoneId": "2107954",
+          "commissionIdr": 10434.615000000002,
+          "orders": 5
+        },
+        {
+          "zoneId": "2108194",
+          "commissionIdr": 681.065,
+          "orders": 3
+        },
+        {
+          "zoneId": "2108304",
+          "commissionIdr": 9455.34,
+          "orders": 16
+        },
+        {
+          "zoneId": "2108569",
+          "commissionIdr": 31712.29498,
+          "orders": 12
+        },
+        {
+          "zoneId": "2108573",
+          "commissionIdr": 5293.25,
+          "orders": 4
+        },
+        {
+          "zoneId": "2108575",
+          "commissionIdr": 1937.7,
+          "orders": 6
+        },
+        {
+          "zoneId": "2108579",
+          "commissionIdr": 10623.15,
+          "orders": 8
+        },
+        {
+          "zoneId": "2108581",
+          "commissionIdr": 281046.7375,
+          "orders": 69
+        },
+        {
+          "zoneId": "2108870",
+          "commissionIdr": 30863.59,
+          "orders": 12
+        },
+        {
+          "zoneId": "2109929",
+          "commissionIdr": 93.65,
+          "orders": 1
+        },
+        {
+          "zoneId": "2110191",
+          "commissionIdr": 0,
+          "orders": 2
+        },
+        {
+          "zoneId": "2111147",
+          "commissionIdr": 21787.36,
+          "orders": 17
+        },
+        {
+          "zoneId": "2111894",
+          "commissionIdr": 195,
+          "orders": 2
+        },
+        {
+          "zoneId": "2113027",
+          "commissionIdr": 980.475,
+          "orders": 1
+        },
+        {
+          "zoneId": "2113590",
+          "commissionIdr": 32962.645,
+          "orders": 6
+        },
+        {
+          "zoneId": "2114235",
+          "commissionIdr": 240.27,
+          "orders": 2
+        },
+        {
+          "zoneId": "2114532",
+          "commissionIdr": 8234.98,
+          "orders": 10
+        },
+        {
+          "zoneId": "2114674",
+          "commissionIdr": 28354.04,
+          "orders": 22
+        },
+        {
+          "zoneId": "2115007",
+          "commissionIdr": 456,
+          "orders": 1
+        },
+        {
+          "zoneId": "4106960",
+          "commissionIdr": 1745.64,
+          "orders": 1
+        },
+        {
+          "zoneId": "6316350",
+          "commissionIdr": 50000,
+          "orders": 1
+        },
+        {
+          "zoneId": "6503393",
+          "commissionIdr": 1066.09,
+          "orders": 4
+        },
+        {
+          "zoneId": "6882554",
+          "commissionIdr": 7871.575,
+          "orders": 3
+        },
+        {
+          "zoneId": "6911955",
+          "commissionIdr": 5771.7,
+          "orders": 2
+        },
+        {
+          "zoneId": "7262551",
+          "commissionIdr": 21812.15,
+          "orders": 2
+        },
+        {
+          "zoneId": "7307286",
+          "commissionIdr": 1740.925,
+          "orders": 6
+        },
+        {
+          "zoneId": "7307287",
+          "commissionIdr": 175.75,
+          "orders": 1
+        },
+        {
+          "zoneId": "7338006",
+          "commissionIdr": 4107,
+          "orders": 4
+        },
+        {
+          "zoneId": "7393037",
+          "commissionIdr": 214.29,
+          "orders": 2
+        },
+        {
+          "zoneId": "7484334",
+          "commissionIdr": 900,
+          "orders": 1
+        },
+        {
+          "zoneId": "7751313",
+          "commissionIdr": 6192.45,
+          "orders": 1
+        },
+        {
+          "zoneId": "7813269",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "7906724",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "8503331",
+          "commissionIdr": 158.85,
+          "orders": 1
+        },
+        {
+          "zoneId": "8503332",
+          "commissionIdr": 527.16,
+          "orders": 1
+        },
+        {
+          "zoneId": "8826340",
+          "commissionIdr": 155.2,
+          "orders": 4
+        },
+        {
+          "zoneId": "8833942",
+          "commissionIdr": 9225,
+          "orders": 1
+        },
+        {
+          "zoneId": "8954847",
+          "commissionIdr": 0,
+          "orders": 2
+        },
+        {
+          "zoneId": "8986273",
+          "commissionIdr": 10823.725,
+          "orders": 2
+        },
+        {
+          "zoneId": "9045923",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "9115518",
+          "commissionIdr": 1831.3600000000001,
+          "orders": 3
+        },
+        {
+          "zoneId": "9158477",
+          "commissionIdr": 3634.395,
+          "orders": 2
+        },
+        {
+          "zoneId": "9211476",
+          "commissionIdr": 10858.365,
+          "orders": 4
+        },
+        {
+          "zoneId": "9211944",
+          "commissionIdr": 331.52,
+          "orders": 1
+        },
+        {
+          "zoneId": "9242171",
+          "commissionIdr": 8586,
+          "orders": 2
+        },
+        {
+          "zoneId": "9249794",
+          "commissionIdr": 4578.965,
+          "orders": 5
+        },
+        {
+          "zoneId": "9297499",
+          "commissionIdr": 833.22,
+          "orders": 3
+        },
+        {
+          "zoneId": "9371330",
+          "commissionIdr": 23633.177499999998,
+          "orders": 16
+        },
+        {
+          "zoneId": "9409411",
+          "commissionIdr": 1918.575,
+          "orders": 1
+        },
+        {
+          "zoneId": "9413878",
+          "commissionIdr": 616,
+          "orders": 1
+        },
+        {
+          "zoneId": "9494558",
+          "commissionIdr": 12774.955,
+          "orders": 16
+        },
+        {
+          "zoneId": "9502620",
+          "commissionIdr": 7885.95,
+          "orders": 8
+        },
+        {
+          "zoneId": "9527030",
+          "commissionIdr": 750,
+          "orders": 1
+        },
+        {
+          "zoneId": "9542041",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "9567061",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "9589004",
+          "commissionIdr": 3337.68,
+          "orders": 1
+        },
+        {
+          "zoneId": "9610070",
+          "commissionIdr": 4190,
+          "orders": 22
+        },
+        {
+          "zoneId": "9611576",
+          "commissionIdr": 3479.18,
+          "orders": 5
+        },
+        {
+          "zoneId": "9615227",
+          "commissionIdr": 2800.6,
+          "orders": 2
+        },
+        {
+          "zoneId": "9615244",
+          "commissionIdr": 6741.905,
+          "orders": 8
+        },
+        {
+          "zoneId": "9615323",
+          "commissionIdr": 2512.88,
+          "orders": 3
+        },
+        {
+          "zoneId": "9658871",
+          "commissionIdr": 597.5,
+          "orders": 2
+        },
+        {
+          "zoneId": "9661488",
+          "commissionIdr": 29245.1,
+          "orders": 5
+        },
+        {
+          "zoneId": "9666660",
+          "commissionIdr": 2432.8,
+          "orders": 2
+        },
+        {
+          "zoneId": "9685597",
+          "commissionIdr": 2484,
+          "orders": 1
+        },
+        {
+          "zoneId": "9716004",
+          "commissionIdr": 113653.34,
+          "orders": 11
+        },
+        {
+          "zoneId": "9733779",
+          "commissionIdr": 18642.75,
+          "orders": 3
+        },
+        {
+          "zoneId": "9733793",
+          "commissionIdr": 10395,
+          "orders": 1
+        },
+        {
+          "zoneId": "9792652",
+          "commissionIdr": 704.03,
+          "orders": 3
+        },
+        {
+          "zoneId": "9813931",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "9823693",
+          "commissionIdr": 5985,
+          "orders": 1
+        },
+        {
+          "zoneId": "9843213",
+          "commissionIdr": 2456.675,
+          "orders": 1
+        },
+        {
+          "zoneId": "9859600",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "9878241",
+          "commissionIdr": 1215.96,
+          "orders": 1
+        },
+        {
+          "zoneId": "9884631",
+          "commissionIdr": 1971.645,
+          "orders": 1
+        },
+        {
+          "zoneId": "9895346",
+          "commissionIdr": 505.68,
+          "orders": 2
+        },
+        {
+          "zoneId": "9897172",
+          "commissionIdr": 192.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "9921440",
+          "commissionIdr": 41132.36,
+          "orders": 14
+        },
+        {
+          "zoneId": "9921501",
+          "commissionIdr": 1575,
+          "orders": 1
+        },
+        {
+          "zoneId": "9938087",
+          "commissionIdr": 2975.97,
+          "orders": 1
+        },
+        {
+          "zoneId": "9944102",
+          "commissionIdr": 203.475,
+          "orders": 4
+        },
+        {
+          "zoneId": "9944311",
+          "commissionIdr": 200,
+          "orders": 1
+        },
+        {
+          "zoneId": "9958813",
+          "commissionIdr": 2910.9375,
+          "orders": 6
+        },
+        {
+          "zoneId": "9962021",
+          "commissionIdr": 1707.15,
+          "orders": 1
+        },
+        {
+          "zoneId": "9968872",
+          "commissionIdr": 522.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "9978083",
+          "commissionIdr": 65031.28000000001,
+          "orders": 18
+        },
+        {
+          "zoneId": "10022947",
+          "commissionIdr": 82148.20000000001,
+          "orders": 24
+        },
+        {
+          "zoneId": "10040097",
+          "commissionIdr": 494.97,
+          "orders": 1
+        },
+        {
+          "zoneId": "10053172",
+          "commissionIdr": 2261.175,
+          "orders": 1
+        },
+        {
+          "zoneId": "10078222",
+          "commissionIdr": 1118.45,
+          "orders": 12
+        },
+        {
+          "zoneId": "10102296",
+          "commissionIdr": 360,
+          "orders": 1
+        },
+        {
+          "zoneId": "10110559",
+          "commissionIdr": 1941.425,
+          "orders": 3
+        },
+        {
+          "zoneId": "10140870",
+          "commissionIdr": 5667.15,
+          "orders": 1
+        },
+        {
+          "zoneId": "10142669",
+          "commissionIdr": 10080,
+          "orders": 2
+        },
+        {
+          "zoneId": "10154333",
+          "commissionIdr": 4781.23,
+          "orders": 5
+        },
+        {
+          "zoneId": "10155109",
+          "commissionIdr": 2014.875,
+          "orders": 3
+        },
+        {
+          "zoneId": "10158502",
+          "commissionIdr": 2281.5,
+          "orders": 2
+        },
+        {
+          "zoneId": "10186407",
+          "commissionIdr": 2066.25,
+          "orders": 1
+        },
+        {
+          "zoneId": "10224049",
+          "commissionIdr": 406.71,
+          "orders": 1
+        },
+        {
+          "zoneId": "10251064",
+          "commissionIdr": 2713.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10280486",
+          "commissionIdr": 1950,
+          "orders": 1
+        },
+        {
+          "zoneId": "10281439",
+          "commissionIdr": 3037.5,
+          "orders": 3
+        },
+        {
+          "zoneId": "10281441",
+          "commissionIdr": 1320,
+          "orders": 1
+        },
+        {
+          "zoneId": "10294805",
+          "commissionIdr": 1566,
+          "orders": 1
+        },
+        {
+          "zoneId": "10310002",
+          "commissionIdr": 6527.045,
+          "orders": 2
+        },
+        {
+          "zoneId": "10313436",
+          "commissionIdr": 3539.995,
+          "orders": 2
+        },
+        {
+          "zoneId": "10314704",
+          "commissionIdr": 3465,
+          "orders": 1
+        },
+        {
+          "zoneId": "10316802",
+          "commissionIdr": 5638.37,
+          "orders": 3
+        },
+        {
+          "zoneId": "10333247",
+          "commissionIdr": 7680.75,
+          "orders": 1
+        },
+        {
+          "zoneId": "10333367",
+          "commissionIdr": 574.66,
+          "orders": 2
+        },
+        {
+          "zoneId": "10333485",
+          "commissionIdr": 93.14,
+          "orders": 1
+        },
+        {
+          "zoneId": "10333902",
+          "commissionIdr": 5971.85,
+          "orders": 1
+        },
+        {
+          "zoneId": "10343674",
+          "commissionIdr": 12077.455,
+          "orders": 7
+        },
+        {
+          "zoneId": "10344103",
+          "commissionIdr": 1275,
+          "orders": 3
+        },
+        {
+          "zoneId": "10348670",
+          "commissionIdr": 1137.575,
+          "orders": 1
+        },
+        {
+          "zoneId": "10359590",
+          "commissionIdr": 7476.75,
+          "orders": 5
+        },
+        {
+          "zoneId": "10364689",
+          "commissionIdr": 2112,
+          "orders": 1
+        },
+        {
+          "zoneId": "10370750",
+          "commissionIdr": 52470.65,
+          "orders": 4
+        },
+        {
+          "zoneId": "10388870",
+          "commissionIdr": 510.63,
+          "orders": 3
+        },
+        {
+          "zoneId": "10389496",
+          "commissionIdr": 1425,
+          "orders": 2
+        },
+        {
+          "zoneId": "10418280",
+          "commissionIdr": 307.485,
+          "orders": 1
+        },
+        {
+          "zoneId": "10422930",
+          "commissionIdr": 64699.030000000006,
+          "orders": 59
+        },
+        {
+          "zoneId": "10430531",
+          "commissionIdr": 855,
+          "orders": 1
+        },
+        {
+          "zoneId": "10433546",
+          "commissionIdr": 868.26,
+          "orders": 1
+        },
+        {
+          "zoneId": "10435706",
+          "commissionIdr": 5445.280000000001,
+          "orders": 2
+        },
+        {
+          "zoneId": "10444040",
+          "commissionIdr": 52139.810000000005,
+          "orders": 2
+        },
+        {
+          "zoneId": "10444979",
+          "commissionIdr": 6777.08,
+          "orders": 1
+        },
+        {
+          "zoneId": "10463213",
+          "commissionIdr": 3832.74,
+          "orders": 3
+        },
+        {
+          "zoneId": "10467468",
+          "commissionIdr": 925,
+          "orders": 1
+        },
+        {
+          "zoneId": "10473422",
+          "commissionIdr": 4096.25,
+          "orders": 1
+        },
+        {
+          "zoneId": "10495363",
+          "commissionIdr": 460.145,
+          "orders": 2
+        },
+        {
+          "zoneId": "10495364",
+          "commissionIdr": 893.4,
+          "orders": 2
+        },
+        {
+          "zoneId": "10496552",
+          "commissionIdr": 3171.52,
+          "orders": 2
+        },
+        {
+          "zoneId": "10519473",
+          "commissionIdr": 604.38,
+          "orders": 1
+        },
+        {
+          "zoneId": "10521355",
+          "commissionIdr": 1390.59,
+          "orders": 1
+        },
+        {
+          "zoneId": "10541311",
+          "commissionIdr": 105,
+          "orders": 1
+        },
+        {
+          "zoneId": "10557356",
+          "commissionIdr": 357.75,
+          "orders": 2
+        },
+        {
+          "zoneId": "10564270",
+          "commissionIdr": 57127.770000000004,
+          "orders": 25
+        },
+        {
+          "zoneId": "10565300",
+          "commissionIdr": 239,
+          "orders": 1
+        },
+        {
+          "zoneId": "10570900",
+          "commissionIdr": 4752,
+          "orders": 5
+        },
+        {
+          "zoneId": "10572226",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10572946",
+          "commissionIdr": 90,
+          "orders": 1
+        },
+        {
+          "zoneId": "10573014",
+          "commissionIdr": 7123.95,
+          "orders": 4
+        },
+        {
+          "zoneId": "10588456",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10588846",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10589261",
+          "commissionIdr": 6928.275000000001,
+          "orders": 9
+        },
+        {
+          "zoneId": "10589455",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10594129",
+          "commissionIdr": 1842.555,
+          "orders": 1
+        },
+        {
+          "zoneId": "10594824",
+          "commissionIdr": 1111.25,
+          "orders": 1
+        },
+        {
+          "zoneId": "10597284",
+          "commissionIdr": 36299.445,
+          "orders": 1
+        },
+        {
+          "zoneId": "10602337",
+          "commissionIdr": 103162.29000000001,
+          "orders": 31
+        },
+        {
+          "zoneId": "10605090",
+          "commissionIdr": 1037.8,
+          "orders": 3
+        },
+        {
+          "zoneId": "10628127",
+          "commissionIdr": 1657.13,
+          "orders": 2
+        },
+        {
+          "zoneId": "10641296",
+          "commissionIdr": 756.825,
+          "orders": 4
+        },
+        {
+          "zoneId": "10652172",
+          "commissionIdr": 9956.02,
+          "orders": 4
+        },
+        {
+          "zoneId": "10652173",
+          "commissionIdr": 4348.92,
+          "orders": 2
+        },
+        {
+          "zoneId": "10661101",
+          "commissionIdr": 1761.75,
+          "orders": 1
+        },
+        {
+          "zoneId": "10664701",
+          "commissionIdr": 51259.98,
+          "orders": 4
+        },
+        {
+          "zoneId": "10685108",
+          "commissionIdr": 5781,
+          "orders": 1
+        },
+        {
+          "zoneId": "10685378",
+          "commissionIdr": 6800,
+          "orders": 1
+        },
+        {
+          "zoneId": "10685768",
+          "commissionIdr": 44432.075,
+          "orders": 28
+        },
+        {
+          "zoneId": "10691045",
+          "commissionIdr": 58135.5,
+          "orders": 5
+        },
+        {
+          "zoneId": "10714642",
+          "commissionIdr": 1017.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10718520",
+          "commissionIdr": 6603.75,
+          "orders": 3
+        },
+        {
+          "zoneId": "10724020",
+          "commissionIdr": 82562.5,
+          "orders": 2
+        },
+        {
+          "zoneId": "10726120",
+          "commissionIdr": 67033.9,
+          "orders": 12
+        },
+        {
+          "zoneId": "10738362",
+          "commissionIdr": 1633.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10738983",
+          "commissionIdr": 698.25,
+          "orders": 1
+        },
+        {
+          "zoneId": "10739327",
+          "commissionIdr": 553,
+          "orders": 2
+        },
+        {
+          "zoneId": "10739641",
+          "commissionIdr": 27897.385,
+          "orders": 8
+        },
+        {
+          "zoneId": "10743771",
+          "commissionIdr": 45.59,
+          "orders": 1
+        },
+        {
+          "zoneId": "10746139",
+          "commissionIdr": 3752,
+          "orders": 1
+        },
+        {
+          "zoneId": "10746366",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10749583",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10754418",
+          "commissionIdr": 827.37,
+          "orders": 3
+        },
+        {
+          "zoneId": "10755491",
+          "commissionIdr": 2688,
+          "orders": 1
+        },
+        {
+          "zoneId": "10755789",
+          "commissionIdr": 255,
+          "orders": 1
+        },
+        {
+          "zoneId": "10760409",
+          "commissionIdr": 28455.415,
+          "orders": 17
+        },
+        {
+          "zoneId": "10765433",
+          "commissionIdr": 0,
+          "orders": 2
+        },
+        {
+          "zoneId": "10783943",
+          "commissionIdr": 4505,
+          "orders": 1
+        },
+        {
+          "zoneId": "10785350",
+          "commissionIdr": 654.08,
+          "orders": 1
+        },
+        {
+          "zoneId": "10793542",
+          "commissionIdr": 201.75,
+          "orders": 1
+        },
+        {
+          "zoneId": "10793658",
+          "commissionIdr": 1982.45,
+          "orders": 4
+        },
+        {
+          "zoneId": "10806140",
+          "commissionIdr": 4223.225,
+          "orders": 2
+        },
+        {
+          "zoneId": "10806145",
+          "commissionIdr": 647.405,
+          "orders": 1
+        },
+        {
+          "zoneId": "10807026",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10807795",
+          "commissionIdr": 1603.8,
+          "orders": 2
+        },
+        {
+          "zoneId": "10810250",
+          "commissionIdr": 6933.96,
+          "orders": 1
+        },
+        {
+          "zoneId": "10810661",
+          "commissionIdr": 825,
+          "orders": 1
+        },
+        {
+          "zoneId": "10810772",
+          "commissionIdr": 11371.6675,
+          "orders": 8
+        },
+        {
+          "zoneId": "10811810",
+          "commissionIdr": 1422.675,
+          "orders": 2
+        },
+        {
+          "zoneId": "10817135",
+          "commissionIdr": 1198.6,
+          "orders": 1
+        },
+        {
+          "zoneId": "10820962",
+          "commissionIdr": 879.95,
+          "orders": 1
+        },
+        {
+          "zoneId": "10820967",
+          "commissionIdr": 50000,
+          "orders": 1
+        },
+        {
+          "zoneId": "10820983",
+          "commissionIdr": 3898.125,
+          "orders": 2
+        },
+        {
+          "zoneId": "10821440",
+          "commissionIdr": 670.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10831423",
+          "commissionIdr": 11391.975,
+          "orders": 2
+        },
+        {
+          "zoneId": "10837148",
+          "commissionIdr": 985.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10839601",
+          "commissionIdr": 70.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10856584",
+          "commissionIdr": 42680.5,
+          "orders": 12
+        },
+        {
+          "zoneId": "10860232",
+          "commissionIdr": 4397.64,
+          "orders": 1
+        },
+        {
+          "zoneId": "10860698",
+          "commissionIdr": 299.875,
+          "orders": 1
+        },
+        {
+          "zoneId": "10871945",
+          "commissionIdr": 11372.4,
+          "orders": 3
+        },
+        {
+          "zoneId": "10880552",
+          "commissionIdr": 2257.425,
+          "orders": 2
+        },
+        {
+          "zoneId": "10884609",
+          "commissionIdr": 1679.98,
+          "orders": 2
+        },
+        {
+          "zoneId": "10884906",
+          "commissionIdr": 7720.05,
+          "orders": 4
+        },
+        {
+          "zoneId": "10885110",
+          "commissionIdr": 639.975,
+          "orders": 1
+        },
+        {
+          "zoneId": "10901889",
+          "commissionIdr": 1828.45,
+          "orders": 1
+        },
+        {
+          "zoneId": "10902586",
+          "commissionIdr": 237.94,
+          "orders": 2
+        },
+        {
+          "zoneId": "10905280",
+          "commissionIdr": 1242.74,
+          "orders": 3
+        },
+        {
+          "zoneId": "10905288",
+          "commissionIdr": 3292.6299,
+          "orders": 2
+        },
+        {
+          "zoneId": "10916338",
+          "commissionIdr": 792,
+          "orders": 3
+        },
+        {
+          "zoneId": "10918858",
+          "commissionIdr": 5035.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10919070",
+          "commissionIdr": 808.0149999999999,
+          "orders": 5
+        },
+        {
+          "zoneId": "10920345",
+          "commissionIdr": 430.155,
+          "orders": 1
+        },
+        {
+          "zoneId": "10924273",
+          "commissionIdr": 2991.6,
+          "orders": 1
+        },
+        {
+          "zoneId": "10937636",
+          "commissionIdr": 1736.235,
+          "orders": 2
+        },
+        {
+          "zoneId": "10937650",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10939288",
+          "commissionIdr": 1485,
+          "orders": 1
+        },
+        {
+          "zoneId": "10940270",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10956261",
+          "commissionIdr": 4446,
+          "orders": 1
+        },
+        {
+          "zoneId": "10956658",
+          "commissionIdr": 82440.47499999999,
+          "orders": 18
+        },
+        {
+          "zoneId": "10956785",
+          "commissionIdr": 5082.02,
+          "orders": 3
+        },
+        {
+          "zoneId": "10957510",
+          "commissionIdr": 165.6,
+          "orders": 1
+        },
+        {
+          "zoneId": "10962057",
+          "commissionIdr": 468.105,
+          "orders": 1
+        },
+        {
+          "zoneId": "10964410",
+          "commissionIdr": 23138.47,
+          "orders": 5
+        },
+        {
+          "zoneId": "10967590",
+          "commissionIdr": 1933.54,
+          "orders": 4
+        },
+        {
+          "zoneId": "10967931",
+          "commissionIdr": 5966.275,
+          "orders": 2
+        },
+        {
+          "zoneId": "10967938",
+          "commissionIdr": 504,
+          "orders": 1
+        },
+        {
+          "zoneId": "10969452",
+          "commissionIdr": 201,
+          "orders": 2
+        },
+        {
+          "zoneId": "10970582",
+          "commissionIdr": 360,
+          "orders": 2
+        },
+        {
+          "zoneId": "10971693",
+          "commissionIdr": 2593.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "10978981",
+          "commissionIdr": 3081.325,
+          "orders": 1
+        },
+        {
+          "zoneId": "10980641",
+          "commissionIdr": 2906.1,
+          "orders": 2
+        },
+        {
+          "zoneId": "10980969",
+          "commissionIdr": 600.3,
+          "orders": 2
+        },
+        {
+          "zoneId": "10980982",
+          "commissionIdr": 5049,
+          "orders": 1
+        },
+        {
+          "zoneId": "10982576",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10983497",
+          "commissionIdr": 3375,
+          "orders": 1
+        },
+        {
+          "zoneId": "10984567",
+          "commissionIdr": 13382.925000000001,
+          "orders": 5
+        },
+        {
+          "zoneId": "10985237",
+          "commissionIdr": 6057.95,
+          "orders": 4
+        },
+        {
+          "zoneId": "10988226",
+          "commissionIdr": 67215.36499999999,
+          "orders": 24
+        },
+        {
+          "zoneId": "10988344",
+          "commissionIdr": 59980.924999999996,
+          "orders": 26
+        },
+        {
+          "zoneId": "10988347",
+          "commissionIdr": 35290.185,
+          "orders": 18
+        },
+        {
+          "zoneId": "10988355",
+          "commissionIdr": 3359.435,
+          "orders": 5
+        },
+        {
+          "zoneId": "10989664",
+          "commissionIdr": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "10992146",
+          "commissionIdr": 2500,
+          "orders": 2
+        },
+        {
+          "zoneId": "10993131",
+          "commissionIdr": 60362.76999999999,
+          "orders": 11
+        },
+        {
+          "zoneId": "10993873",
+          "commissionIdr": 65997.225,
+          "orders": 21
+        },
+        {
+          "zoneId": "10995474",
+          "commissionIdr": 215.115,
+          "orders": 1
+        },
+        {
+          "zoneId": "10995478",
+          "commissionIdr": 5635.5,
+          "orders": 3
+        },
+        {
+          "zoneId": "10996809",
+          "commissionIdr": 130.35,
+          "orders": 1
+        },
+        {
+          "zoneId": "11005905",
+          "commissionIdr": 2536.68,
+          "orders": 2
+        },
+        {
+          "zoneId": "11007902",
+          "commissionIdr": 8865.92,
+          "orders": 9
+        },
+        {
+          "zoneId": "11009580",
+          "commissionIdr": 122.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "11009627",
+          "commissionIdr": 2700,
+          "orders": 1
+        },
+        {
+          "zoneId": "11010438",
+          "commissionIdr": 3786.44,
+          "orders": 9
+        },
+        {
+          "zoneId": "11010445",
+          "commissionIdr": 16580.1,
+          "orders": 4
+        },
+        {
+          "zoneId": "11010447",
+          "commissionIdr": 3053.46,
+          "orders": 4
+        },
+        {
+          "zoneId": "11010450",
+          "commissionIdr": 277.5,
+          "orders": 1
+        },
+        {
+          "zoneId": "11010459",
+          "commissionIdr": 14746.785,
+          "orders": 5
+        },
+        {
+          "zoneId": "11010467",
+          "commissionIdr": 1080,
+          "orders": 1
+        },
+        {
+          "zoneId": "11011091",
+          "commissionIdr": 642,
+          "orders": 1
+        },
+        {
+          "zoneId": "11011689",
+          "commissionIdr": 1071.75,
+          "orders": 1
+        },
+        {
+          "zoneId": "11013551",
+          "commissionIdr": 2234.115,
+          "orders": 1
+        },
+        {
+          "zoneId": "11015402",
+          "commissionIdr": 1590.42,
+          "orders": 3
+        },
+        {
+          "zoneId": "11019881",
+          "commissionIdr": 5749.6,
+          "orders": 2
+        },
+        {
+          "zoneId": "11019898",
+          "commissionIdr": 5036.7,
+          "orders": 4
+        },
+        {
+          "zoneId": "11019919",
+          "commissionIdr": 309.15,
+          "orders": 1
+        },
+        {
+          "zoneId": "11019934",
+          "commissionIdr": 1365,
+          "orders": 2
+        },
+        {
+          "zoneId": "11019956",
+          "commissionIdr": 7708.05,
+          "orders": 3
+        }
+      ]
+    },
+    {
+      "id": "file-1780729929941-lrlms",
+      "filename": "publisher-conversion-report-all-bliR8xUr-20260528 (1).csv",
+      "fileType": "shopee_ph",
+      "rowCount": 52,
+      "platform": "PropellerAds",
+      "uploadedAt": "2026-06-06T07:12:09.941Z",
+      "data": [
+        {
+          "zoneId": "10816",
+          "earningsUsd": 0.1,
+          "orders": 1
+        },
+        {
+          "zoneId": "35869",
+          "earningsUsd": 0.11,
+          "orders": 2
+        },
+        {
+          "zoneId": "99970",
+          "earningsUsd": 0.48,
+          "orders": 3
+        },
+        {
+          "zoneId": "108679",
+          "earningsUsd": 0.9500000000000001,
+          "orders": 11
+        },
+        {
+          "zoneId": "109057",
+          "earningsUsd": 0.06,
+          "orders": 1
+        },
+        {
+          "zoneId": "123628",
+          "earningsUsd": 0.04,
+          "orders": 1
+        },
+        {
+          "zoneId": "123973",
+          "earningsUsd": 0.16,
+          "orders": 3
+        },
+        {
+          "zoneId": "124288",
+          "earningsUsd": 0.24,
+          "orders": 1
+        },
+        {
+          "zoneId": "125620",
+          "earningsUsd": 0.06,
+          "orders": 1
+        },
+        {
+          "zoneId": "125626",
+          "earningsUsd": 0.11,
+          "orders": 1
+        },
+        {
+          "zoneId": "138799",
+          "earningsUsd": 0.13,
+          "orders": 4
+        },
+        {
+          "zoneId": "148519",
+          "earningsUsd": 0.1,
+          "orders": 2
+        },
+        {
+          "zoneId": "148600",
+          "earningsUsd": 0.95,
+          "orders": 6
+        },
+        {
+          "zoneId": "150904",
+          "earningsUsd": 0.28,
+          "orders": 1
+        },
+        {
+          "zoneId": "183073",
+          "earningsUsd": 0.14,
+          "orders": 1
+        },
+        {
+          "zoneId": "196093",
+          "earningsUsd": 0.81,
+          "orders": 2
+        },
+        {
+          "zoneId": "201667",
+          "earningsUsd": 1.9000000000000004,
+          "orders": 27
+        },
+        {
+          "zoneId": "213781",
+          "earningsUsd": 30.009999999999973,
+          "orders": 247
+        },
+        {
+          "zoneId": "220117",
+          "earningsUsd": 0.08,
+          "orders": 1
+        },
+        {
+          "zoneId": "221734",
+          "earningsUsd": 0.1,
+          "orders": 3
+        },
+        {
+          "zoneId": "222154",
+          "earningsUsd": 0.09,
+          "orders": 1
+        },
+        {
+          "zoneId": "244417",
+          "earningsUsd": 0.41000000000000003,
+          "orders": 6
+        },
+        {
+          "zoneId": "244561",
+          "earningsUsd": 0.04,
+          "orders": 1
+        },
+        {
+          "zoneId": "253480",
+          "earningsUsd": 0.08,
+          "orders": 1
+        },
+        {
+          "zoneId": "255916",
+          "earningsUsd": 0.42,
+          "orders": 3
+        },
+        {
+          "zoneId": "257173",
+          "earningsUsd": 0.39,
+          "orders": 1
+        },
+        {
+          "zoneId": "258598",
+          "earningsUsd": 0.1,
+          "orders": 1
+        },
+        {
+          "zoneId": "260410",
+          "earningsUsd": 0.1,
+          "orders": 5
+        },
+        {
+          "zoneId": "260425",
+          "earningsUsd": 0.25,
+          "orders": 1
+        },
+        {
+          "zoneId": "271054",
+          "earningsUsd": 0,
+          "orders": 1
+        },
+        {
+          "zoneId": "331399",
+          "earningsUsd": 0.05,
+          "orders": 1
+        },
+        {
+          "zoneId": "334903",
+          "earningsUsd": 0.18000000000000002,
+          "orders": 5
+        },
+        {
+          "zoneId": "341500",
+          "earningsUsd": 0.7700000000000002,
+          "orders": 14
+        },
+        {
+          "zoneId": "341731",
+          "earningsUsd": 0.45,
+          "orders": 7
+        },
+        {
+          "zoneId": "342775",
+          "earningsUsd": 1.2900000000000005,
+          "orders": 16
+        },
+        {
+          "zoneId": "345079",
+          "earningsUsd": 0.6400000000000001,
+          "orders": 6
+        },
+        {
+          "zoneId": "348778",
+          "earningsUsd": 0.26,
+          "orders": 1
+        },
+        {
+          "zoneId": "350896",
+          "earningsUsd": 0.9600000000000002,
+          "orders": 6
+        },
+        {
+          "zoneId": "359296",
+          "earningsUsd": 0.04,
+          "orders": 1
+        },
+        {
+          "zoneId": "359971",
+          "earningsUsd": 0.06,
+          "orders": 1
+        },
+        {
+          "zoneId": "364306",
+          "earningsUsd": 2.1199999999999997,
+          "orders": 12
+        },
+        {
+          "zoneId": "364309",
+          "earningsUsd": 0.55,
+          "orders": 4
+        },
+        {
+          "zoneId": "367252",
+          "earningsUsd": 0.08,
+          "orders": 1
+        },
+        {
+          "zoneId": "369286",
+          "earningsUsd": 0.02,
+          "orders": 1
+        },
+        {
+          "zoneId": "381694",
+          "earningsUsd": 0.55,
+          "orders": 3
+        },
+        {
+          "zoneId": "381712",
+          "earningsUsd": 1.8800000000000003,
+          "orders": 13
+        },
+        {
+          "zoneId": "385159",
+          "earningsUsd": 0.18,
+          "orders": 3
+        },
+        {
+          "zoneId": "387034",
+          "earningsUsd": 1,
+          "orders": 7
+        },
+        {
+          "zoneId": "387250",
+          "earningsUsd": 0.04,
+          "orders": 1
+        },
+        {
+          "zoneId": "387733",
+          "earningsUsd": 2.0200000000000014,
+          "orders": 49
+        },
+        {
+          "zoneId": "388300",
+          "earningsUsd": 0.06,
+          "orders": 1
+        },
+        {
+          "zoneId": "395764",
+          "earningsUsd": 1.04,
+          "orders": 8
+        }
+      ]
+    },
+    {
+      "id": "file-1780729911815-ah9cr",
+      "filename": "WebsiteClickReport202605220844 (1).csv",
+      "fileType": "clicks",
+      "rowCount": 450,
+      "platform": "PropellerAds",
+      "uploadedAt": "2026-06-06T07:11:51.815Z",
+      "data": [
+        {
+          "zoneId": "1539066",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1558039",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1625924",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1703530",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1746366",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1750636",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1765078",
+          "clicks": 5
+        },
+        {
+          "zoneId": "1781568",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1786187",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1791753",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1799321",
+          "clicks": 15
+        },
+        {
+          "zoneId": "1816832",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1836494",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1843133",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1890368",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1891062",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1929280",
+          "clicks": 2
+        },
+        {
+          "zoneId": "1941517",
+          "clicks": 4
+        },
+        {
+          "zoneId": "1942422",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1942982",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1947392",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1950506",
+          "clicks": 28
+        },
+        {
+          "zoneId": "1953940",
+          "clicks": 66
+        },
+        {
+          "zoneId": "1955235",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1974550",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1981998",
+          "clicks": 6
+        },
+        {
+          "zoneId": "1983091",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1988168",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1989949",
+          "clicks": 2
+        },
+        {
+          "zoneId": "1990773",
+          "clicks": 5
+        },
+        {
+          "zoneId": "1993848",
+          "clicks": 42
+        },
+        {
+          "zoneId": "1994477",
+          "clicks": 1
+        },
+        {
+          "zoneId": "1995043",
+          "clicks": 4
+        },
+        {
+          "zoneId": "1997564",
+          "clicks": 14
+        },
+        {
+          "zoneId": "1998424",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2004140",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2004814",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2006216",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2007279",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2007285",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2013573",
+          "clicks": 2025
+        },
+        {
+          "zoneId": "2015164",
+          "clicks": 51
+        },
+        {
+          "zoneId": "2015694",
+          "clicks": 137
+        },
+        {
+          "zoneId": "2016657",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2017749",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2019394",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2022335",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2031149",
+          "clicks": 46
+        },
+        {
+          "zoneId": "2031483",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2032527",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2033424",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2034267",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2034295",
+          "clicks": 687
+        },
+        {
+          "zoneId": "2034416",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2035409",
+          "clicks": 875
+        },
+        {
+          "zoneId": "2038343",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2038534",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2038699",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2038745",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2042461",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2045268",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2045379",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2045956",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2045966",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2046803",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2047924",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2048149",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2049480",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2050071",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2051078",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2051897",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2052114",
+          "clicks": 191
+        },
+        {
+          "zoneId": "2052445",
+          "clicks": 16
+        },
+        {
+          "zoneId": "2053031",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2053343",
+          "clicks": 41
+        },
+        {
+          "zoneId": "2058340",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2059304",
+          "clicks": 89
+        },
+        {
+          "zoneId": "2060263",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2060547",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2060549",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2061616",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2061620",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2063850",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2065529",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2065919",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2065920",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2065981",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2067895",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2068896",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2071401",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2071697",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2072359",
+          "clicks": 359
+        },
+        {
+          "zoneId": "2072452",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2073886",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2074087",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2075216",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2077553",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2078166",
+          "clicks": 995
+        },
+        {
+          "zoneId": "2078197",
+          "clicks": 244
+        },
+        {
+          "zoneId": "2079115",
+          "clicks": 16
+        },
+        {
+          "zoneId": "2080081",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2080087",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2080250",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2080778",
+          "clicks": 15
+        },
+        {
+          "zoneId": "2081964",
+          "clicks": 24
+        },
+        {
+          "zoneId": "2082261",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2082517",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2082665",
+          "clicks": 567
+        },
+        {
+          "zoneId": "2084257",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2084487",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2084674",
+          "clicks": 317
+        },
+        {
+          "zoneId": "2084743",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2085290",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2085370",
+          "clicks": 534
+        },
+        {
+          "zoneId": "2085809",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2085897",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2085967",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2086183",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2086267",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2086268",
+          "clicks": 448
+        },
+        {
+          "zoneId": "2087104",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2087109",
+          "clicks": 814
+        },
+        {
+          "zoneId": "2087191",
+          "clicks": 393
+        },
+        {
+          "zoneId": "2087283",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2087495",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2087694",
+          "clicks": 3112
+        },
+        {
+          "zoneId": "2088178",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2088442",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2088777",
+          "clicks": 32
+        },
+        {
+          "zoneId": "2089102",
+          "clicks": 553
+        },
+        {
+          "zoneId": "2089173",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2089456",
+          "clicks": 17
+        },
+        {
+          "zoneId": "2089788",
+          "clicks": 170
+        },
+        {
+          "zoneId": "2089879",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2090108",
+          "clicks": 205
+        },
+        {
+          "zoneId": "2090594",
+          "clicks": 59
+        },
+        {
+          "zoneId": "2090611",
+          "clicks": 162
+        },
+        {
+          "zoneId": "2090615",
+          "clicks": 172
+        },
+        {
+          "zoneId": "2090617",
+          "clicks": 203
+        },
+        {
+          "zoneId": "2090619",
+          "clicks": 81
+        },
+        {
+          "zoneId": "2090685",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2090714",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2090843",
+          "clicks": 10
+        },
+        {
+          "zoneId": "2090908",
+          "clicks": 39
+        },
+        {
+          "zoneId": "2091113",
+          "clicks": 38
+        },
+        {
+          "zoneId": "2091280",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2091304",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2091311",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2091315",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2092300",
+          "clicks": 843
+        },
+        {
+          "zoneId": "2092525",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2092588",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2092662",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2092782",
+          "clicks": 33
+        },
+        {
+          "zoneId": "2092877",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2092950",
+          "clicks": 573
+        },
+        {
+          "zoneId": "2093189",
+          "clicks": 13
+        },
+        {
+          "zoneId": "2093437",
+          "clicks": 98
+        },
+        {
+          "zoneId": "2093926",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2093971",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2093997",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2094064",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2094073",
+          "clicks": 46
+        },
+        {
+          "zoneId": "2094147",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2094171",
+          "clicks": 1047
+        },
+        {
+          "zoneId": "2094875",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2094918",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2095033",
+          "clicks": 12
+        },
+        {
+          "zoneId": "2095223",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2095256",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2095271",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2095428",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2095624",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2095630",
+          "clicks": 24
+        },
+        {
+          "zoneId": "2095635",
+          "clicks": 136
+        },
+        {
+          "zoneId": "2095706",
+          "clicks": 57
+        },
+        {
+          "zoneId": "2095708",
+          "clicks": 286
+        },
+        {
+          "zoneId": "2095710",
+          "clicks": 89
+        },
+        {
+          "zoneId": "2095712",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2095713",
+          "clicks": 142
+        },
+        {
+          "zoneId": "2095728",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2095736",
+          "clicks": 380
+        },
+        {
+          "zoneId": "2095775",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2095776",
+          "clicks": 367
+        },
+        {
+          "zoneId": "2095778",
+          "clicks": 505
+        },
+        {
+          "zoneId": "2095780",
+          "clicks": 448
+        },
+        {
+          "zoneId": "2095783",
+          "clicks": 652
+        },
+        {
+          "zoneId": "2095787",
+          "clicks": 314
+        },
+        {
+          "zoneId": "2095792",
+          "clicks": 451
+        },
+        {
+          "zoneId": "2095844",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2095846",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2095850",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2095854",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2095864",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2095866",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2095868",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2095879",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2095881",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2095883",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2095895",
+          "clicks": 25
+        },
+        {
+          "zoneId": "2096047",
+          "clicks": 37
+        },
+        {
+          "zoneId": "2096055",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2096063",
+          "clicks": 20
+        },
+        {
+          "zoneId": "2096090",
+          "clicks": 28
+        },
+        {
+          "zoneId": "2096313",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2096337",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2096471",
+          "clicks": 14
+        },
+        {
+          "zoneId": "2096474",
+          "clicks": 43
+        },
+        {
+          "zoneId": "2096481",
+          "clicks": 59
+        },
+        {
+          "zoneId": "2096482",
+          "clicks": 45
+        },
+        {
+          "zoneId": "2096559",
+          "clicks": 21
+        },
+        {
+          "zoneId": "2096677",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2097058",
+          "clicks": 31
+        },
+        {
+          "zoneId": "2097450",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2097461",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2097479",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2097618",
+          "clicks": 12
+        },
+        {
+          "zoneId": "2097746",
+          "clicks": 12
+        },
+        {
+          "zoneId": "2097820",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2097880",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2097889",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2097993",
+          "clicks": 14
+        },
+        {
+          "zoneId": "2098156",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2098225",
+          "clicks": 14
+        },
+        {
+          "zoneId": "2098228",
+          "clicks": 733
+        },
+        {
+          "zoneId": "2098232",
+          "clicks": 22
+        },
+        {
+          "zoneId": "2098739",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2098740",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2098753",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2098880",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2098979",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2099029",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2099038",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2099084",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2099410",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2099459",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2099807",
+          "clicks": 166
+        },
+        {
+          "zoneId": "2099858",
+          "clicks": 22
+        },
+        {
+          "zoneId": "2099935",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2099940",
+          "clicks": 184
+        },
+        {
+          "zoneId": "2099962",
+          "clicks": 151
+        },
+        {
+          "zoneId": "2100186",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2100610",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2100633",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2100804",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2100807",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2100868",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2100915",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2100941",
+          "clicks": 560
+        },
+        {
+          "zoneId": "2100984",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2100986",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2100988",
+          "clicks": 8
+        },
+        {
+          "zoneId": "2101131",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2101217",
+          "clicks": 732
+        },
+        {
+          "zoneId": "2101219",
+          "clicks": 446
+        },
+        {
+          "zoneId": "2101247",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2101265",
+          "clicks": 10
+        },
+        {
+          "zoneId": "2101400",
+          "clicks": 1814
+        },
+        {
+          "zoneId": "2101540",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2101984",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2101994",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2102027",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2102040",
+          "clicks": 16
+        },
+        {
+          "zoneId": "2102178",
+          "clicks": 570
+        },
+        {
+          "zoneId": "2102380",
+          "clicks": 518
+        },
+        {
+          "zoneId": "2102382",
+          "clicks": 1079
+        },
+        {
+          "zoneId": "2102384",
+          "clicks": 1875
+        },
+        {
+          "zoneId": "2102386",
+          "clicks": 734
+        },
+        {
+          "zoneId": "2102500",
+          "clicks": 1109
+        },
+        {
+          "zoneId": "2102502",
+          "clicks": 633
+        },
+        {
+          "zoneId": "2102519",
+          "clicks": 19
+        },
+        {
+          "zoneId": "2102972",
+          "clicks": 13
+        },
+        {
+          "zoneId": "2103131",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2103197",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2103240",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2103302",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2103305",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2103343",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2103407",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2103411",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2103564",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2103591",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2103669",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2103752",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2104113",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2104115",
+          "clicks": 203
+        },
+        {
+          "zoneId": "2104314",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2104316",
+          "clicks": 273
+        },
+        {
+          "zoneId": "2104332",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2104337",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2104367",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2104584",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2104978",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2105455",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2105457",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2105461",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2105613",
+          "clicks": 27
+        },
+        {
+          "zoneId": "2105616",
+          "clicks": 354
+        },
+        {
+          "zoneId": "2105619",
+          "clicks": 14
+        },
+        {
+          "zoneId": "2105634",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2105683",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2105855",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2105857",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2106192",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2106232",
+          "clicks": 8
+        },
+        {
+          "zoneId": "2106304",
+          "clicks": 21
+        },
+        {
+          "zoneId": "2106410",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2106446",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2106669",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2106694",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2106734",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2106818",
+          "clicks": 21
+        },
+        {
+          "zoneId": "2106827",
+          "clicks": 1021
+        },
+        {
+          "zoneId": "2107138",
+          "clicks": 14
+        },
+        {
+          "zoneId": "2107452",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2107657",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2107909",
+          "clicks": 22
+        },
+        {
+          "zoneId": "2107938",
+          "clicks": 23
+        },
+        {
+          "zoneId": "2107943",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2107944",
+          "clicks": 51
+        },
+        {
+          "zoneId": "2107945",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2107946",
+          "clicks": 66
+        },
+        {
+          "zoneId": "2107947",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2107948",
+          "clicks": 25
+        },
+        {
+          "zoneId": "2107949",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2107950",
+          "clicks": 44
+        },
+        {
+          "zoneId": "2107951",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2107952",
+          "clicks": 37
+        },
+        {
+          "zoneId": "2107953",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2107954",
+          "clicks": 67
+        },
+        {
+          "zoneId": "2107955",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2107956",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2108055",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2108194",
+          "clicks": 167
+        },
+        {
+          "zoneId": "2108299",
+          "clicks": 10
+        },
+        {
+          "zoneId": "2108304",
+          "clicks": 154
+        },
+        {
+          "zoneId": "2108308",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2108345",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2108346",
+          "clicks": 13
+        },
+        {
+          "zoneId": "2108569",
+          "clicks": 826
+        },
+        {
+          "zoneId": "2108571",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2108573",
+          "clicks": 494
+        },
+        {
+          "zoneId": "2108575",
+          "clicks": 842
+        },
+        {
+          "zoneId": "2108577",
+          "clicks": 11
+        },
+        {
+          "zoneId": "2108579",
+          "clicks": 334
+        },
+        {
+          "zoneId": "2108581",
+          "clicks": 1219
+        },
+        {
+          "zoneId": "2108697",
+          "clicks": 18
+        },
+        {
+          "zoneId": "2108870",
+          "clicks": 1868
+        },
+        {
+          "zoneId": "2108872",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2108937",
+          "clicks": 24
+        },
+        {
+          "zoneId": "2109031",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2109077",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2109406",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2109423",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2109577",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2109717",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2109929",
+          "clicks": 152
+        },
+        {
+          "zoneId": "2109968",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2110101",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2110142",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2110191",
+          "clicks": 67
+        },
+        {
+          "zoneId": "2110271",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2110560",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2110987",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2111147",
+          "clicks": 1142
+        },
+        {
+          "zoneId": "2111589",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2111789",
+          "clicks": 12
+        },
+        {
+          "zoneId": "2111894",
+          "clicks": 451
+        },
+        {
+          "zoneId": "2111996",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2112009",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2112132",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2112146",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2112527",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2112581",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2112771",
+          "clicks": 5
+        },
+        {
+          "zoneId": "2112909",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2113027",
+          "clicks": 13
+        },
+        {
+          "zoneId": "2113080",
+          "clicks": 20
+        },
+        {
+          "zoneId": "2113274",
+          "clicks": 17
+        },
+        {
+          "zoneId": "2113590",
+          "clicks": 535
+        },
+        {
+          "zoneId": "2113596",
+          "clicks": 10
+        },
+        {
+          "zoneId": "2113684",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2113690",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2113693",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2113695",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2113700",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2113702",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2113708",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2113710",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2113715",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2113740",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2113744",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2113887",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2113898",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114037",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114062",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114063",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2114119",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2114121",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114123",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114155",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2114228",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114233",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2114235",
+          "clicks": 25
+        },
+        {
+          "zoneId": "2114324",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2114354",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2114532",
+          "clicks": 523
+        },
+        {
+          "zoneId": "2114674",
+          "clicks": 200
+        },
+        {
+          "zoneId": "2114689",
+          "clicks": 8
+        },
+        {
+          "zoneId": "2114700",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114711",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2114851",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2114858",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2114979",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114984",
+          "clicks": 6
+        },
+        {
+          "zoneId": "2114994",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114995",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2114998",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2115001",
+          "clicks": 7
+        },
+        {
+          "zoneId": "2115007",
+          "clicks": 25
+        },
+        {
+          "zoneId": "2115011",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2115014",
+          "clicks": 8
+        },
+        {
+          "zoneId": "2115029",
+          "clicks": 9
+        },
+        {
+          "zoneId": "2115035",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115043",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115047",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115062",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115063",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115070",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115072",
+          "clicks": 13
+        },
+        {
+          "zoneId": "2115102",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115103",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2115154",
+          "clicks": 4
+        },
+        {
+          "zoneId": "2115155",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115181",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2115192",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115217",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115252",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115350",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115533",
+          "clicks": 3
+        },
+        {
+          "zoneId": "2115534",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2115705",
+          "clicks": 2
+        },
+        {
+          "zoneId": "2115881",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115925",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115939",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2115996",
+          "clicks": 1
+        },
+        {
+          "zoneId": "2116025",
+          "clicks": 3
+        },
+        {
+          "zoneId": "{zoneid}----",
+          "clicks": 36
+        },
+        {
+          "zoneId": "----",
+          "clicks": 25055
+        },
+        {
+          "zoneId": "-",
+          "clicks": 2
+        }
+      ]
+    },
+    {
+      "id": "manual-file-1780459903713",
+      "filename": "Input Manual",
+      "fileType": "manual",
+      "uploadedAt": "2026-06-03T04:11:43.713Z",
+      "rowCount": 1,
+      "data": [
+        {
+          "zoneId": "111111",
+          "platform": "PropellerAds",
+          "market": "id",
+          "impressions": 111,
+          "clicks": 2,
+          "costUsd": 0.2,
+          "commissionIdr": 10000,
+          "commissionUsd": 2.1,
+          "orders": 2
+        }
+      ]
+    },
+    {
+      "id": "file-1780459785452-9sgg4",
+      "filename": "stats (9) (1).csv",
+      "fileType": "stats",
+      "rowCount": 845,
+      "platform": "PropellerAds",
+      "uploadedAt": "2026-06-03T04:09:45.452Z",
+      "data": [
+        {
+          "zoneId": "2013573",
+          "impressions": 12127,
+          "clicks": 0,
+          "cost": 3.0318
+        },
+        {
+          "zoneId": "2087694",
+          "impressions": 11763,
+          "clicks": 0,
+          "cost": 2.9408
+        },
+        {
+          "zoneId": "2102384",
+          "impressions": 11312,
+          "clicks": 0,
+          "cost": 2.828
+        },
+        {
+          "zoneId": "2108870",
+          "impressions": 9583,
+          "clicks": 0,
+          "cost": 2.3958
+        },
+        {
+          "zoneId": "2101400",
+          "impressions": 9194,
+          "clicks": 0,
+          "cost": 2.2985
+        },
+        {
+          "zoneId": "2078166",
+          "impressions": 6060,
+          "clicks": 0,
+          "cost": 1.515
+        },
+        {
+          "zoneId": "2101217",
+          "impressions": 5764,
+          "clicks": 0,
+          "cost": 1.441
+        },
+        {
+          "zoneId": "2102500",
+          "impressions": 5470,
+          "clicks": 0,
+          "cost": 1.3675
+        },
+        {
+          "zoneId": "2106827",
+          "impressions": 5383,
+          "clicks": 0,
+          "cost": 1.3458
+        },
+        {
+          "zoneId": "2095783",
+          "impressions": 5205,
+          "clicks": 0,
+          "cost": 1.3013
+        },
+        {
+          "zoneId": "2111147",
+          "impressions": 5186,
+          "clicks": 0,
+          "cost": 1.2965
+        },
+        {
+          "zoneId": "2113590",
+          "impressions": 5104,
+          "clicks": 0,
+          "cost": 1.276
+        },
+        {
+          "zoneId": "2094171",
+          "impressions": 5086,
+          "clicks": 0,
+          "cost": 1.2715
+        },
+        {
+          "zoneId": "2102502",
+          "impressions": 5036,
+          "clicks": 0,
+          "cost": 1.259
+        },
+        {
+          "zoneId": "2102382",
+          "impressions": 4870,
+          "clicks": 0,
+          "cost": 1.2175
+        },
+        {
+          "zoneId": "2101219",
+          "impressions": 4576,
+          "clicks": 0,
+          "cost": 1.144
+        },
+        {
+          "zoneId": "2087109",
+          "impressions": 4484,
+          "clicks": 0,
+          "cost": 1.121
+        },
+        {
+          "zoneId": "2034295",
+          "impressions": 4443,
+          "clicks": 0,
+          "cost": 1.1108
+        },
+        {
+          "zoneId": "2108575",
+          "impressions": 4291,
+          "clicks": 0,
+          "cost": 1.0728
+        },
+        {
+          "zoneId": "2102386",
+          "impressions": 4262,
+          "clicks": 0,
+          "cost": 1.0655
+        },
+        {
+          "zoneId": "2085370",
+          "impressions": 4068,
+          "clicks": 0,
+          "cost": 1.017
+        },
+        {
+          "zoneId": "2035409",
+          "impressions": 3898,
+          "clicks": 0,
+          "cost": 0.9745
+        },
+        {
+          "zoneId": "2108581",
+          "impressions": 3862,
+          "clicks": 0,
+          "cost": 0.9655
+        },
+        {
+          "zoneId": "2108569",
+          "impressions": 3814,
+          "clicks": 0,
+          "cost": 0.9535
+        },
+        {
+          "zoneId": "2092300",
+          "impressions": 3344,
+          "clicks": 0,
+          "cost": 0.836
+        },
+        {
+          "zoneId": "2095792",
+          "impressions": 3258,
+          "clicks": 0,
+          "cost": 0.8145
+        },
+        {
+          "zoneId": "2102380",
+          "impressions": 3068,
+          "clicks": 0,
+          "cost": 0.767
+        },
+        {
+          "zoneId": "2087191",
+          "impressions": 2911,
+          "clicks": 0,
+          "cost": 0.7278
+        },
+        {
+          "zoneId": "2098225",
+          "impressions": 2895,
+          "clicks": 0,
+          "cost": 0.7238
+        },
+        {
+          "zoneId": "2100941",
+          "impressions": 2884,
+          "clicks": 0,
+          "cost": 0.721
+        },
+        {
+          "zoneId": "2089102",
+          "impressions": 2864,
+          "clicks": 0,
+          "cost": 0.716
+        },
+        {
+          "zoneId": "2108579",
+          "impressions": 2837,
+          "clicks": 0,
+          "cost": 0.7093
+        },
+        {
+          "zoneId": "1990773",
+          "impressions": 2764,
+          "clicks": 0,
+          "cost": 0.691
+        },
+        {
+          "zoneId": "2102178",
+          "impressions": 2758,
+          "clicks": 0,
+          "cost": 0.6895
+        },
+        {
+          "zoneId": "2114532",
+          "impressions": 2723,
+          "clicks": 0,
+          "cost": 0.6808
+        },
+        {
+          "zoneId": "2095736",
+          "impressions": 2626,
+          "clicks": 0,
+          "cost": 0.6565
+        },
+        {
+          "zoneId": "2098228",
+          "impressions": 2554,
+          "clicks": 0,
+          "cost": 0.6385
+        },
+        {
+          "zoneId": "2015164",
+          "impressions": 2529,
+          "clicks": 0,
+          "cost": 0.6323
+        },
+        {
+          "zoneId": "2108573",
+          "impressions": 2525,
+          "clicks": 0,
+          "cost": 0.6313
+        },
+        {
+          "zoneId": "2072359",
+          "impressions": 2480,
+          "clicks": 0,
+          "cost": 0.62
+        },
+        {
+          "zoneId": "2082665",
+          "impressions": 2417,
+          "clicks": 0,
+          "cost": 0.6043
+        },
+        {
+          "zoneId": "2052114",
+          "impressions": 2412,
+          "clicks": 0,
+          "cost": 0.603
+        },
+        {
+          "zoneId": "2111894",
+          "impressions": 2405,
+          "clicks": 0,
+          "cost": 0.6013
+        },
+        {
+          "zoneId": "2095778",
+          "impressions": 2395,
+          "clicks": 0,
+          "cost": 0.5988
+        },
+        {
+          "zoneId": "2092950",
+          "impressions": 2360,
+          "clicks": 0,
+          "cost": 0.59
+        },
+        {
+          "zoneId": "2086268",
+          "impressions": 2315,
+          "clicks": 0,
+          "cost": 0.5788
+        },
+        {
+          "zoneId": "2104316",
+          "impressions": 2244,
+          "clicks": 0,
+          "cost": 0.561
+        },
+        {
+          "zoneId": "2095787",
+          "impressions": 2160,
+          "clicks": 0,
+          "cost": 0.54
+        },
+        {
+          "zoneId": "2095780",
+          "impressions": 2032,
+          "clicks": 0,
+          "cost": 0.508
+        },
+        {
+          "zoneId": "2095708",
+          "impressions": 1887,
+          "clicks": 0,
+          "cost": 0.4718
+        },
+        {
+          "zoneId": "2095776",
+          "impressions": 1826,
+          "clicks": 0,
+          "cost": 0.4565
+        },
+        {
+          "zoneId": "2084674",
+          "impressions": 1741,
+          "clicks": 0,
+          "cost": 0.4353
+        },
+        {
+          "zoneId": "2114674",
+          "impressions": 1580,
+          "clicks": 0,
+          "cost": 0.395
+        },
+        {
+          "zoneId": "2078197",
+          "impressions": 1409,
+          "clicks": 0,
+          "cost": 0.3523
+        },
+        {
+          "zoneId": "2105616",
+          "impressions": 1388,
+          "clicks": 0,
+          "cost": 0.347
+        },
+        {
+          "zoneId": "2099940",
+          "impressions": 1168,
+          "clicks": 0,
+          "cost": 0.292
+        },
+        {
+          "zoneId": "2015694",
+          "impressions": 1142,
+          "clicks": 0,
+          "cost": 0.2855
+        },
+        {
+          "zoneId": "2059304",
+          "impressions": 1131,
+          "clicks": 0,
+          "cost": 0.2828
+        },
+        {
+          "zoneId": "2104115",
+          "impressions": 1055,
+          "clicks": 0,
+          "cost": 0.2638
+        },
+        {
+          "zoneId": "2099962",
+          "impressions": 912,
+          "clicks": 0,
+          "cost": 0.228
+        },
+        {
+          "zoneId": "2108304",
+          "impressions": 844,
+          "clicks": 0,
+          "cost": 0.211
+        },
+        {
+          "zoneId": "2109929",
+          "impressions": 843,
+          "clicks": 0,
+          "cost": 0.2108
+        },
+        {
+          "zoneId": "2090108",
+          "impressions": 736,
+          "clicks": 0,
+          "cost": 0.184
+        },
+        {
+          "zoneId": "2099807",
+          "impressions": 699,
+          "clicks": 0,
+          "cost": 0.1748
+        },
+        {
+          "zoneId": "2090617",
+          "impressions": 681,
+          "clicks": 0,
+          "cost": 0.1703
+        },
+        {
+          "zoneId": "1953940",
+          "impressions": 680,
+          "clicks": 0,
+          "cost": 0.17
+        },
+        {
+          "zoneId": "2089788",
+          "impressions": 677,
+          "clicks": 0,
+          "cost": 0.1693
+        },
+        {
+          "zoneId": "2090615",
+          "impressions": 645,
+          "clicks": 0,
+          "cost": 0.1613
+        },
+        {
+          "zoneId": "2108194",
+          "impressions": 644,
+          "clicks": 0,
+          "cost": 0.161
+        },
+        {
+          "zoneId": "2095635",
+          "impressions": 632,
+          "clicks": 0,
+          "cost": 0.158
+        },
+        {
+          "zoneId": "2095713",
+          "impressions": 625,
+          "clicks": 0,
+          "cost": 0.1563
+        },
+        {
+          "zoneId": "2090611",
+          "impressions": 593,
+          "clicks": 0,
+          "cost": 0.1483
+        },
+        {
+          "zoneId": "2017749",
+          "impressions": 530,
+          "clicks": 0,
+          "cost": 0.1325
+        },
+        {
+          "zoneId": "2107954",
+          "impressions": 496,
+          "clicks": 0,
+          "cost": 0.124
+        },
+        {
+          "zoneId": "1799321",
+          "impressions": 483,
+          "clicks": 0,
+          "cost": 0.1208
+        },
+        {
+          "zoneId": "2114235",
+          "impressions": 449,
+          "clicks": 0,
+          "cost": 0.1123
+        },
+        {
+          "zoneId": "2004814",
+          "impressions": 430,
+          "clicks": 0,
+          "cost": 0.1075
+        },
+        {
+          "zoneId": "2031149",
+          "impressions": 410,
+          "clicks": 0,
+          "cost": 0.1025
+        },
+        {
+          "zoneId": "2093437",
+          "impressions": 393,
+          "clicks": 0,
+          "cost": 0.0983
+        },
+        {
+          "zoneId": "2107946",
+          "impressions": 390,
+          "clicks": 0,
+          "cost": 0.0975
+        },
+        {
+          "zoneId": "2096090",
+          "impressions": 373,
+          "clicks": 0,
+          "cost": 0.0933
+        },
+        {
+          "zoneId": "2108577",
+          "impressions": 370,
+          "clicks": 0,
+          "cost": 0.0925
+        },
+        {
+          "zoneId": "2107944",
+          "impressions": 365,
+          "clicks": 0,
+          "cost": 0.0913
+        },
+        {
+          "zoneId": "2097618",
+          "impressions": 351,
+          "clicks": 0,
+          "cost": 0.0878
+        },
+        {
+          "zoneId": "2092782",
+          "impressions": 342,
+          "clicks": 0,
+          "cost": 0.0855
+        },
+        {
+          "zoneId": "2095710",
+          "impressions": 334,
+          "clicks": 0,
+          "cost": 0.0835
+        },
+        {
+          "zoneId": "2110191",
+          "impressions": 327,
+          "clicks": 0,
+          "cost": 0.0818
+        },
+        {
+          "zoneId": "2107952",
+          "impressions": 318,
+          "clicks": 0,
+          "cost": 0.0795
+        },
+        {
+          "zoneId": "2095706",
+          "impressions": 316,
+          "clicks": 0,
+          "cost": 0.079
+        },
+        {
+          "zoneId": "2114998",
+          "impressions": 307,
+          "clicks": 0,
+          "cost": 0.0768
+        },
+        {
+          "zoneId": "2090619",
+          "impressions": 301,
+          "clicks": 0,
+          "cost": 0.0753
+        },
+        {
+          "zoneId": "1765078",
+          "impressions": 266,
+          "clicks": 0,
+          "cost": 0.0665
+        },
+        {
+          "zoneId": "2115029",
+          "impressions": 262,
+          "clicks": 0,
+          "cost": 0.0655
+        },
+        {
+          "zoneId": "2096559",
+          "impressions": 262,
+          "clicks": 0,
+          "cost": 0.0655
+        },
+        {
+          "zoneId": "1993848",
+          "impressions": 248,
+          "clicks": 0,
+          "cost": 0.062
+        },
+        {
+          "zoneId": "2105461",
+          "impressions": 241,
+          "clicks": 0,
+          "cost": 0.0603
+        },
+        {
+          "zoneId": "2097058",
+          "impressions": 237,
+          "clicks": 0,
+          "cost": 0.0593
+        },
+        {
+          "zoneId": "2090594",
+          "impressions": 234,
+          "clicks": 0,
+          "cost": 0.0585
+        },
+        {
+          "zoneId": "2105455",
+          "impressions": 229,
+          "clicks": 0,
+          "cost": 0.0573
+        },
+        {
+          "zoneId": "2090908",
+          "impressions": 217,
+          "clicks": 0,
+          "cost": 0.0543
+        },
+        {
+          "zoneId": "2106818",
+          "impressions": 214,
+          "clicks": 0,
+          "cost": 0.0535
+        },
+        {
+          "zoneId": "2091113",
+          "impressions": 206,
+          "clicks": 0,
+          "cost": 0.0515
+        },
+        {
+          "zoneId": "2099935",
+          "impressions": 205,
+          "clicks": 0,
+          "cost": 0.0513
+        },
+        {
+          "zoneId": "2096482",
+          "impressions": 200,
+          "clicks": 0,
+          "cost": 0.05
+        },
+        {
+          "zoneId": "2107950",
+          "impressions": 193,
+          "clicks": 0,
+          "cost": 0.0483
+        },
+        {
+          "zoneId": "2096481",
+          "impressions": 179,
+          "clicks": 0,
+          "cost": 0.0448
+        },
+        {
+          "zoneId": "2053343",
+          "impressions": 173,
+          "clicks": 0,
+          "cost": 0.0433
+        },
+        {
+          "zoneId": "2096474",
+          "impressions": 168,
+          "clicks": 0,
+          "cost": 0.042
+        },
+        {
+          "zoneId": "2089456",
+          "impressions": 163,
+          "clicks": 0,
+          "cost": 0.0408
+        },
+        {
+          "zoneId": "2107948",
+          "impressions": 161,
+          "clicks": 0,
+          "cost": 0.0403
+        },
+        {
+          "zoneId": "2115014",
+          "impressions": 159,
+          "clicks": 0,
+          "cost": 0.0398
+        },
+        {
+          "zoneId": "2107938",
+          "impressions": 153,
+          "clicks": 0,
+          "cost": 0.0383
+        },
+        {
+          "zoneId": "1950506",
+          "impressions": 152,
+          "clicks": 0,
+          "cost": 0.038
+        },
+        {
+          "zoneId": "2096047",
+          "impressions": 146,
+          "clicks": 0,
+          "cost": 0.0365
+        },
+        {
+          "zoneId": "2095712",
+          "impressions": 139,
+          "clicks": 0,
+          "cost": 0.0348
+        },
+        {
+          "zoneId": "2108299",
+          "impressions": 136,
+          "clicks": 0,
+          "cost": 0.034
+        },
+        {
+          "zoneId": "2094073",
+          "impressions": 132,
+          "clicks": 0,
+          "cost": 0.033
+        },
+        {
+          "zoneId": "2098232",
+          "impressions": 127,
+          "clicks": 0,
+          "cost": 0.0318
+        },
+        {
+          "zoneId": "2095895",
+          "impressions": 126,
+          "clicks": 0,
+          "cost": 0.0315
+        },
+        {
+          "zoneId": "2107956",
+          "impressions": 119,
+          "clicks": 0,
+          "cost": 0.0298
+        },
+        {
+          "zoneId": "2105457",
+          "impressions": 115,
+          "clicks": 0,
+          "cost": 0.0288
+        },
+        {
+          "zoneId": "2108346",
+          "impressions": 112,
+          "clicks": 0,
+          "cost": 0.028
+        },
+        {
+          "zoneId": "2081964",
+          "impressions": 109,
+          "clicks": 0,
+          "cost": 0.0273
+        },
+        {
+          "zoneId": "2114984",
+          "impressions": 105,
+          "clicks": 0,
+          "cost": 0.0263
+        },
+        {
+          "zoneId": "2004140",
+          "impressions": 104,
+          "clicks": 0,
+          "cost": 0.026
+        },
+        {
+          "zoneId": "2088777",
+          "impressions": 103,
+          "clicks": 0,
+          "cost": 0.0258
+        },
+        {
+          "zoneId": "2097746",
+          "impressions": 102,
+          "clicks": 0,
+          "cost": 0.0255
+        },
+        {
+          "zoneId": "2102040",
+          "impressions": 100,
+          "clicks": 0,
+          "cost": 0.025
+        },
+        {
+          "zoneId": "2105613",
+          "impressions": 99,
+          "clicks": 0,
+          "cost": 0.0248
+        },
+        {
+          "zoneId": "2097993",
+          "impressions": 98,
+          "clicks": 0,
+          "cost": 0.0245
+        },
+        {
+          "zoneId": "2080778",
+          "impressions": 96,
+          "clicks": 0,
+          "cost": 0.024
+        },
+        {
+          "zoneId": "2115007",
+          "impressions": 94,
+          "clicks": 0,
+          "cost": 0.0235
+        },
+        {
+          "zoneId": "2107909",
+          "impressions": 90,
+          "clicks": 0,
+          "cost": 0.0225
+        },
+        {
+          "zoneId": "2113274",
+          "impressions": 90,
+          "clicks": 0,
+          "cost": 0.0225
+        },
+        {
+          "zoneId": "2095630",
+          "impressions": 89,
+          "clicks": 0,
+          "cost": 0.0223
+        },
+        {
+          "zoneId": "2107951",
+          "impressions": 88,
+          "clicks": 0,
+          "cost": 0.022
+        },
+        {
+          "zoneId": "2113080",
+          "impressions": 88,
+          "clicks": 0,
+          "cost": 0.022
+        },
+        {
+          "zoneId": "2108937",
+          "impressions": 88,
+          "clicks": 0,
+          "cost": 0.022
+        },
+        {
+          "zoneId": "2108697",
+          "impressions": 86,
+          "clicks": 0,
+          "cost": 0.0215
+        },
+        {
+          "zoneId": "2108345",
+          "impressions": 85,
+          "clicks": 0,
+          "cost": 0.0213
+        },
+        {
+          "zoneId": "2096471",
+          "impressions": 81,
+          "clicks": 0,
+          "cost": 0.0203
+        },
+        {
+          "zoneId": "2102519",
+          "impressions": 81,
+          "clicks": 0,
+          "cost": 0.0203
+        },
+        {
+          "zoneId": "2104314",
+          "impressions": 79,
+          "clicks": 0,
+          "cost": 0.0198
+        },
+        {
+          "zoneId": "2106304",
+          "impressions": 77,
+          "clicks": 0,
+          "cost": 0.0193
+        },
+        {
+          "zoneId": "2099858",
+          "impressions": 76,
+          "clicks": 0,
+          "cost": 0.019
+        },
+        {
+          "zoneId": "2096063",
+          "impressions": 74,
+          "clicks": 0,
+          "cost": 0.0185
+        },
+        {
+          "zoneId": "2051078",
+          "impressions": 73,
+          "clicks": 0,
+          "cost": 0.0183
+        },
+        {
+          "zoneId": "2102972",
+          "impressions": 70,
+          "clicks": 0,
+          "cost": 0.0175
+        },
+        {
+          "zoneId": "2098156",
+          "impressions": 67,
+          "clicks": 0,
+          "cost": 0.0168
+        },
+        {
+          "zoneId": "2095775",
+          "impressions": 65,
+          "clicks": 0,
+          "cost": 0.0163
+        },
+        {
+          "zoneId": "2105619",
+          "impressions": 65,
+          "clicks": 0,
+          "cost": 0.0163
+        },
+        {
+          "zoneId": "2107138",
+          "impressions": 61,
+          "clicks": 0,
+          "cost": 0.0153
+        },
+        {
+          "zoneId": "2107955",
+          "impressions": 59,
+          "clicks": 0,
+          "cost": 0.0148
+        },
+        {
+          "zoneId": "2090843",
+          "impressions": 56,
+          "clicks": 0,
+          "cost": 0.014
+        },
+        {
+          "zoneId": "2085290",
+          "impressions": 56,
+          "clicks": 0,
+          "cost": 0.014
+        },
+        {
+          "zoneId": "2113027",
+          "impressions": 54,
+          "clicks": 0,
+          "cost": 0.0135
+        },
+        {
+          "zoneId": "2070385",
+          "impressions": 54,
+          "clicks": 0,
+          "cost": 0.0135
+        },
+        {
+          "zoneId": "2115011",
+          "impressions": 54,
+          "clicks": 0,
+          "cost": 0.0135
+        },
+        {
+          "zoneId": "2007279",
+          "impressions": 54,
+          "clicks": 0,
+          "cost": 0.0135
+        },
+        {
+          "zoneId": "2071697",
+          "impressions": 53,
+          "clicks": 0,
+          "cost": 0.0133
+        },
+        {
+          "zoneId": "2114063",
+          "impressions": 53,
+          "clicks": 0,
+          "cost": 0.0133
+        },
+        {
+          "zoneId": "2071401",
+          "impressions": 52,
+          "clicks": 0,
+          "cost": 0.013
+        },
+        {
+          "zoneId": "2115025",
+          "impressions": 52,
+          "clicks": 0,
+          "cost": 0.013
+        },
+        {
+          "zoneId": "2101540",
+          "impressions": 51,
+          "clicks": 0,
+          "cost": 0.0128
+        },
+        {
+          "zoneId": "2115006",
+          "impressions": 50,
+          "clicks": 0,
+          "cost": 0.0125
+        },
+        {
+          "zoneId": "2107947",
+          "impressions": 50,
+          "clicks": 0,
+          "cost": 0.0125
+        },
+        {
+          "zoneId": "2114711",
+          "impressions": 50,
+          "clicks": 0,
+          "cost": 0.0125
+        },
+        {
+          "zoneId": "2115001",
+          "impressions": 48,
+          "clicks": 0,
+          "cost": 0.012
+        },
+        {
+          "zoneId": "2110142",
+          "impressions": 46,
+          "clicks": 0,
+          "cost": 0.0115
+        },
+        {
+          "zoneId": "2111996",
+          "impressions": 46,
+          "clicks": 0,
+          "cost": 0.0115
+        },
+        {
+          "zoneId": "1997564",
+          "impressions": 45,
+          "clicks": 0,
+          "cost": 0.0113
+        },
+        {
+          "zoneId": "2087495",
+          "impressions": 43,
+          "clicks": 0,
+          "cost": 0.0108
+        },
+        {
+          "zoneId": "2091280",
+          "impressions": 42,
+          "clicks": 0,
+          "cost": 0.0105
+        },
+        {
+          "zoneId": "1981998",
+          "impressions": 41,
+          "clicks": 0,
+          "cost": 0.0103
+        },
+        {
+          "zoneId": "2111789",
+          "impressions": 41,
+          "clicks": 0,
+          "cost": 0.0103
+        },
+        {
+          "zoneId": "2038699",
+          "impressions": 40,
+          "clicks": 0,
+          "cost": 0.01
+        },
+        {
+          "zoneId": "2103343",
+          "impressions": 38,
+          "clicks": 0,
+          "cost": 0.0095
+        },
+        {
+          "zoneId": "2095033",
+          "impressions": 37,
+          "clicks": 0,
+          "cost": 0.0093
+        },
+        {
+          "zoneId": "2092877",
+          "impressions": 37,
+          "clicks": 0,
+          "cost": 0.0093
+        },
+        {
+          "zoneId": "2115533",
+          "impressions": 37,
+          "clicks": 0,
+          "cost": 0.0093
+        },
+        {
+          "zoneId": "2098979",
+          "impressions": 36,
+          "clicks": 0,
+          "cost": 0.009
+        },
+        {
+          "zoneId": "2113690",
+          "impressions": 36,
+          "clicks": 0,
+          "cost": 0.009
+        },
+        {
+          "zoneId": "2082517",
+          "impressions": 35,
+          "clicks": 0,
+          "cost": 0.0088
+        },
+        {
+          "zoneId": "2100984",
+          "impressions": 35,
+          "clicks": 0,
+          "cost": 0.0088
+        },
+        {
+          "zoneId": "2052445",
+          "impressions": 35,
+          "clicks": 0,
+          "cost": 0.0088
+        },
+        {
+          "zoneId": "2100988",
+          "impressions": 34,
+          "clicks": 0,
+          "cost": 0.0085
+        },
+        {
+          "zoneId": "2100610",
+          "impressions": 34,
+          "clicks": 0,
+          "cost": 0.0085
+        },
+        {
+          "zoneId": "2073886",
+          "impressions": 33,
+          "clicks": 0,
+          "cost": 0.0083
+        },
+        {
+          "zoneId": "2107949",
+          "impressions": 32,
+          "clicks": 0,
+          "cost": 0.008
+        },
+        {
+          "zoneId": "2105683",
+          "impressions": 31,
+          "clicks": 0,
+          "cost": 0.0078
+        },
+        {
+          "zoneId": "2107953",
+          "impressions": 30,
+          "clicks": 0,
+          "cost": 0.0075
+        },
+        {
+          "zoneId": "2108308",
+          "impressions": 30,
+          "clicks": 0,
+          "cost": 0.0075
+        },
+        {
+          "zoneId": "2084743",
+          "impressions": 30,
+          "clicks": 0,
+          "cost": 0.0075
+        },
+        {
+          "zoneId": "2099410",
+          "impressions": 30,
+          "clicks": 0,
+          "cost": 0.0075
+        },
+        {
+          "zoneId": "2113715",
+          "impressions": 30,
+          "clicks": 0,
+          "cost": 0.0075
+        },
+        {
+          "zoneId": "2093189",
+          "impressions": 29,
+          "clicks": 0,
+          "cost": 0.0073
+        },
+        {
+          "zoneId": "2114689",
+          "impressions": 29,
+          "clicks": 0,
+          "cost": 0.0073
+        },
+        {
+          "zoneId": "2104113",
+          "impressions": 29,
+          "clicks": 0,
+          "cost": 0.0073
+        },
+        {
+          "zoneId": "2101265",
+          "impressions": 28,
+          "clicks": 0,
+          "cost": 0.007
+        },
+        {
+          "zoneId": "2113596",
+          "impressions": 28,
+          "clicks": 0,
+          "cost": 0.007
+        },
+        {
+          "zoneId": "2099038",
+          "impressions": 27,
+          "clicks": 0,
+          "cost": 0.0068
+        },
+        {
+          "zoneId": "2102558",
+          "impressions": 27,
+          "clicks": 0,
+          "cost": 0.0068
+        },
+        {
+          "zoneId": "2060547",
+          "impressions": 26,
+          "clicks": 0,
+          "cost": 0.0065
+        },
+        {
+          "zoneId": "2115072",
+          "impressions": 26,
+          "clicks": 0,
+          "cost": 0.0065
+        },
+        {
+          "zoneId": "2114324",
+          "impressions": 26,
+          "clicks": 0,
+          "cost": 0.0065
+        },
+        {
+          "zoneId": "2098880",
+          "impressions": 26,
+          "clicks": 0,
+          "cost": 0.0065
+        },
+        {
+          "zoneId": "2109031",
+          "impressions": 26,
+          "clicks": 0,
+          "cost": 0.0065
+        },
+        {
+          "zoneId": "2088178",
+          "impressions": 25,
+          "clicks": 0,
+          "cost": 0.0063
+        },
+        {
+          "zoneId": "2113710",
+          "impressions": 25,
+          "clicks": 0,
+          "cost": 0.0063
+        },
+        {
+          "zoneId": "2108571",
+          "impressions": 25,
+          "clicks": 0,
+          "cost": 0.0063
+        },
+        {
+          "zoneId": "2115068",
+          "impressions": 24,
+          "clicks": 0,
+          "cost": 0.006
+        },
+        {
+          "zoneId": "2107943",
+          "impressions": 24,
+          "clicks": 0,
+          "cost": 0.006
+        },
+        {
+          "zoneId": "2032527",
+          "impressions": 23,
+          "clicks": 0,
+          "cost": 0.0058
+        },
+        {
+          "zoneId": "2104332",
+          "impressions": 23,
+          "clicks": 0,
+          "cost": 0.0058
+        },
+        {
+          "zoneId": "2114031",
+          "impressions": 23,
+          "clicks": 0,
+          "cost": 0.0058
+        },
+        {
+          "zoneId": "2114037",
+          "impressions": 23,
+          "clicks": 0,
+          "cost": 0.0058
+        },
+        {
+          "zoneId": "2097889",
+          "impressions": 23,
+          "clicks": 0,
+          "cost": 0.0058
+        },
+        {
+          "zoneId": "2101984",
+          "impressions": 23,
+          "clicks": 0,
+          "cost": 0.0058
+        },
+        {
+          "zoneId": "2056623",
+          "impressions": 22,
+          "clicks": 0,
+          "cost": 0.0055
+        },
+        {
+          "zoneId": "2115954",
+          "impressions": 22,
+          "clicks": 0,
+          "cost": 0.0055
+        },
+        {
+          "zoneId": "2106232",
+          "impressions": 21,
+          "clicks": 0,
+          "cost": 0.0053
+        },
+        {
+          "zoneId": "2100868",
+          "impressions": 21,
+          "clicks": 0,
+          "cost": 0.0053
+        },
+        {
+          "zoneId": "2034416",
+          "impressions": 21,
+          "clicks": 0,
+          "cost": 0.0053
+        },
+        {
+          "zoneId": "2091315",
+          "impressions": 21,
+          "clicks": 0,
+          "cost": 0.0053
+        },
+        {
+          "zoneId": "2103752",
+          "impressions": 21,
+          "clicks": 0,
+          "cost": 0.0053
+        },
+        {
+          "zoneId": "2079115",
+          "impressions": 21,
+          "clicks": 0,
+          "cost": 0.0053
+        },
+        {
+          "zoneId": "2114354",
+          "impressions": 20,
+          "clicks": 0,
+          "cost": 0.005
+        },
+        {
+          "zoneId": "2104978",
+          "impressions": 20,
+          "clicks": 0,
+          "cost": 0.005
+        },
+        {
+          "zoneId": "2103564",
+          "impressions": 20,
+          "clicks": 0,
+          "cost": 0.005
+        },
+        {
+          "zoneId": "2094147",
+          "impressions": 20,
+          "clicks": 0,
+          "cost": 0.005
+        },
+        {
+          "zoneId": "2100893",
+          "impressions": 20,
+          "clicks": 0,
+          "cost": 0.005
+        },
+        {
+          "zoneId": "2096677",
+          "impressions": 20,
+          "clicks": 0,
+          "cost": 0.005
+        },
+        {
+          "zoneId": "2067895",
+          "impressions": 19,
+          "clicks": 0,
+          "cost": 0.0048
+        },
+        {
+          "zoneId": "2115062",
+          "impressions": 19,
+          "clicks": 0,
+          "cost": 0.0048
+        },
+        {
+          "zoneId": "2092525",
+          "impressions": 19,
+          "clicks": 0,
+          "cost": 0.0048
+        },
+        {
+          "zoneId": "2114233",
+          "impressions": 19,
+          "clicks": 0,
+          "cost": 0.0048
+        },
+        {
+          "zoneId": "2115043",
+          "impressions": 18,
+          "clicks": 0,
+          "cost": 0.0045
+        },
+        {
+          "zoneId": "2093926",
+          "impressions": 18,
+          "clicks": 0,
+          "cost": 0.0045
+        },
+        {
+          "zoneId": "2095256",
+          "impressions": 18,
+          "clicks": 0,
+          "cost": 0.0045
+        },
+        {
+          "zoneId": "2095879",
+          "impressions": 17,
+          "clicks": 0,
+          "cost": 0.0043
+        },
+        {
+          "zoneId": "2095223",
+          "impressions": 17,
+          "clicks": 0,
+          "cost": 0.0043
+        },
+        {
+          "zoneId": "2115063",
+          "impressions": 17,
+          "clicks": 0,
+          "cost": 0.0043
+        },
+        {
+          "zoneId": "2095844",
+          "impressions": 17,
+          "clicks": 0,
+          "cost": 0.0043
+        },
+        {
+          "zoneId": "2112132",
+          "impressions": 17,
+          "clicks": 0,
+          "cost": 0.0043
+        },
+        {
+          "zoneId": "2099806",
+          "impressions": 16,
+          "clicks": 0,
+          "cost": 0.004
+        },
+        {
+          "zoneId": "2114155",
+          "impressions": 16,
+          "clicks": 0,
+          "cost": 0.004
+        },
+        {
+          "zoneId": "2049480",
+          "impressions": 15,
+          "clicks": 0,
+          "cost": 0.0038
+        },
+        {
+          "zoneId": "2098740",
+          "impressions": 15,
+          "clicks": 0,
+          "cost": 0.0038
+        },
+        {
+          "zoneId": "2112146",
+          "impressions": 15,
+          "clicks": 0,
+          "cost": 0.0038
+        },
+        {
+          "zoneId": "2095624",
+          "impressions": 15,
+          "clicks": 0,
+          "cost": 0.0038
+        },
+        {
+          "zoneId": "2111589",
+          "impressions": 15,
+          "clicks": 0,
+          "cost": 0.0038
+        },
+        {
+          "zoneId": "2089879",
+          "impressions": 14,
+          "clicks": 0,
+          "cost": 0.0035
+        },
+        {
+          "zoneId": "2115143",
+          "impressions": 14,
+          "clicks": 0,
+          "cost": 0.0035
+        },
+        {
+          "zoneId": "2096337",
+          "impressions": 14,
+          "clicks": 0,
+          "cost": 0.0035
+        },
+        {
+          "zoneId": "2085809",
+          "impressions": 14,
+          "clicks": 0,
+          "cost": 0.0035
+        },
+        {
+          "zoneId": "2093957",
+          "impressions": 14,
+          "clicks": 0,
+          "cost": 0.0035
+        },
+        {
+          "zoneId": "2103302",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2107945",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2112527",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2112909",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2048149",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2074087",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2103197",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2095728",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2095864",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2109968",
+          "impressions": 13,
+          "clicks": 0,
+          "cost": 0.0033
+        },
+        {
+          "zoneId": "2075216",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2106410",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2115057",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2113680",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2080081",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2107452",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "1942422",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2112139",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "1479545",
+          "impressions": 12,
+          "clicks": 0,
+          "cost": 0.003
+        },
+        {
+          "zoneId": "2114983",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2115010",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2095671",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2106446",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2098753",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2058340",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "1786187",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2095862",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2096055",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2099459",
+          "impressions": 11,
+          "clicks": 0,
+          "cost": 0.0028
+        },
+        {
+          "zoneId": "2038745",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2086183",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2110271",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2072452",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2114989",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2115047",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2113688",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2108055",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2115102",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2110987",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2095866",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2099020",
+          "impressions": 10,
+          "clicks": 0,
+          "cost": 0.0025
+        },
+        {
+          "zoneId": "2098485",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2100812",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2114851",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2095846",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2104337",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2099084",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2100783",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2100986",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2115534",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2106694",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2109077",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2095881",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "2103228",
+          "impressions": 9,
+          "clicks": 0,
+          "cost": 0.0023
+        },
+        {
+          "zoneId": "1905169",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2104149",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2113708",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2101994",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2115030",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2094064",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2086267",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2115049",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2095856",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2077553",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2109423",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2115217",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2065981",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2103669",
+          "impressions": 8,
+          "clicks": 0,
+          "cost": 0.002
+        },
+        {
+          "zoneId": "2102932",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2100777",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2114569",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2087104",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2113686",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2114119",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2115154",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2091304",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2112771",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2100915",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "1703530",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2106734",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2115002",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2115948",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2114125",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2103407",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2110560",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2091311",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2114994",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2103305",
+          "impressions": 7,
+          "clicks": 0,
+          "cost": 0.0018
+        },
+        {
+          "zoneId": "2046803",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "1943000",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "1941517",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2114034",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2109433",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2100990",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2106192",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2115192",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2112120",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2042461",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2109099",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2115155",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2103240",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2054393",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2087283",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2100875",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2065529",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "1974550",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2102176",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2065919",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2060884",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2115183",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2061620",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2095626",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2113695",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2115103",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2033424",
+          "impressions": 6,
+          "clicks": 0,
+          "cost": 0.0015
+        },
+        {
+          "zoneId": "2100836",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2114995",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2094891",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2097880",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2060569",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "1589643",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2113693",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2069968",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2105833",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2065920",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2114121",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2114858",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "1817619",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "1988052",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2110101",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2114061",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2022335",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2114999",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2115033",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2077561",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2100186",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2100804",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2115350",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2100877",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2034791",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2094918",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2094920",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2113684",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2114228",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2108872",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2065978",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "1960840",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2095868",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2080087",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2103591",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2113744",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2097751",
+          "impressions": 5,
+          "clicks": 0,
+          "cost": 0.0013
+        },
+        {
+          "zoneId": "2089173",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2095271",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2038534",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "1942982",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2094174",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2063850",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2088257",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2104253",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2078733",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "1625924",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2045379",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2114967",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2113887",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2101938",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2085897",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2098801",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2055924",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2114123",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2116025",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "1995043",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2115181",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2091111",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2097891",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2100853",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2047924",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2114525",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2115925",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2103461",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "1974309",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2114338",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2087601",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2095428",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2088442",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2115705",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "1781568",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "1984402",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2101131",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2060549",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2102027",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2100839",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2095883",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2045956",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2006216",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2114378",
+          "impressions": 4,
+          "clicks": 0,
+          "cost": 0.001
+        },
+        {
+          "zoneId": "2101075",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2095854",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2114062",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2061616",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2113697",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2096313",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2045775",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1775027",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115713",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2092662",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2109095",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2107657",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2079983",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2106669",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2091523",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1996669",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1765080",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2114523",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1786186",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1756413",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115246",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2110070",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2096219",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2094146",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2114990",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1790383",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115038",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2100823",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2077908",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2098739",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115881",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1891062",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2105634",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2092588",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2097820",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2045173",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2084487",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2085784",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2113717",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2088112",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2064776",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2113740",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2100808",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2084764",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115654",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2097479",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2114346",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2063849",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2102038",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2114356",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2053031",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2102170",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115266",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1942255",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115076",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2087466",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "1972517",
+          "impressions": 3,
+          "clicks": 0,
+          "cost": 0.0008
+        },
+        {
+          "zoneId": "2115093",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2109427",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2048147",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2105580",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1790300",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2098101",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1750636",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2107901",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1687924",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1998424",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2051897",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2095850",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2100888",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1840580",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2099151",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1946687",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2096067",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2103743",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114979",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2090163",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1762995",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114068",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2086819",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2072938",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2101226",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2071797",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1833379",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114945",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2113898",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1947392",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2034267",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2071699",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2107805",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1746366",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115215",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2113702",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1457912",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1546876",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2042763",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1989949",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2038085",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2077557",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2068977",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114341",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1988168",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2031128",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115939",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115089",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2090722",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1929280",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2110486",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2109487",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115122",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2091309",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115197",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2096950",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114340",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2031483",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2097450",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114982",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2100807",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1591110",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2100859",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2103455",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115070",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2090862",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1600923",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1983047",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2052108",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115221",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2096183",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1836494",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1997527",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2062850",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2072390",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1542864",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2068896",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2085926",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115253",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114702",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2060204",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2050071",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2103451",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1791753",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2113682",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2102282",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2115216",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2104415",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2072223",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2107957",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2105855",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2096462",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1771733",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2103459",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2088258",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2084257",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2112756",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "1988468",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2114330",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2093309",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2095885",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2061923",
+          "impressions": 2,
+          "clicks": 0,
+          "cost": 0.0005
+        },
+        {
+          "zoneId": "2070917",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1988467",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2069802",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2042071",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2032424",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2088177",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2109860",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2087962",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2081876",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1965767",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115200",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2015168",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096336",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2099412",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090249",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103426",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090716",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103311",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2099029",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2069618",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2044965",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2073661",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2064940",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096629",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113691",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2112009",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2109279",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103131",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2094875",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090762",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2033035",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115999",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2104367",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2092223",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096468",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100866",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1976593",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2078558",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2106338",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090714",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103415",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2028790",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114441",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2093982",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2085967",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2060568",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2088036",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1939980",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2065977",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2062280",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2095889",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113432",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2016657",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2078338",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2088441",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1972880",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1945696",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2095860",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2107127",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1795058",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2084742",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2093441",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2061362",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2101913",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100899",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113024",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2112581",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100887",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2032198",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2110658",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2111209",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2079787",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1946688",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2076032",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090895",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1988273",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2028166",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2019394",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2106145",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2095065",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090218",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1909630",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2112526",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090685",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2095634",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2080250",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2107976",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2098323",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1996753",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2101247",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1895227",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1897258",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2109406",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2004120",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2062903",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1950523",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115066",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2108774",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2109717",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1970070",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2027302",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1765157",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1843133",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2094888",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1558039",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1912360",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096288",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2101343",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1539066",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1993291",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2107793",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1951596",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2092838",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096279",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114626",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2094387",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2107683",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113706",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2110851",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1816509",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2081722",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2097163",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103453",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1919461",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2082261",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2075063",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1854471",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1994477",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115576",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2066769",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2070022",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2098869",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1984149",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100780",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2079417",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2038343",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1955850",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100633",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2092219",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2106275",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2056049",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2093971",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114700",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2054525",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2022273",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1913298",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096211",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115252",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1816832",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1570077",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2045268",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2062272",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2068035",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2107171",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115564",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113896",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2097753",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2059573",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114941",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2108107",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2088421",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1968054",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103473",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2033288",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2028943",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113729",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2105857",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2108846",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2045966",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115526",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2068884",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2090760",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2095581",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2097461",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2108348",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1955235",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1591111",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115101",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1983091",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2065362",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1890368",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2046398",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2107302",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2109577",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2078170",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115435",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096065",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1935275",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114032",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115953",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115944",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1773559",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2112691",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2060263",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115946",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2099527",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2113700",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103411",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114421",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2098206",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115035",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2027409",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2065980",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114423",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2094877",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2114288",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2104324",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100976",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2104584",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2099638",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2065918",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1960471",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1909627",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1799504",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2028227",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2084084",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2096057",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2007285",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1425022",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100838",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1839499",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1989914",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2093997",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1788127",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2109800",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2080075",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2014792",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100865",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2095848",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1998384",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2100903",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "1542653",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2103457",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        },
+        {
+          "zoneId": "2115996",
+          "impressions": 1,
+          "clicks": 0,
+          "cost": 0.0003
+        }
+      ]
+    }
+  ]
+}

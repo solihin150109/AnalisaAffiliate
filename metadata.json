@@ -1,0 +1,6 @@
+{
+  "name": "Media Buying & Affiliate Consolidation Dashboard",
+  "description": "A consolidated dashboard for tracking media buying costs alongside Website clicks and Shopee affiliate commissions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model GlobalSetting {
+  id           String   @id @default("default")
+  exchangeRate Float    @default(16300.0) // USD to IDR manual conversion rate
+  updatedAt    DateTime @updatedAt
+}
+
+model ZoneReport {
+  zoneId        String   @id                     // Unique Zone ID acting as primary key
+  impressions   Int      @default(0)
+  statsClicks   Int      @default(0)
+  trackerClicks Int      @default(0)
+  costUsd       Float    @default(0.0)
+  commissionIdr Float    @default(0.0)            // Direct ID commission in IDR
+  commissionUsd Float    @default(0.0)            // Direct PH commission in USD
+  platformTag   String                            // e.g., PropellerAds, Clickadu, etc.
+  marketTag     String   @default("unmatched")    // e.g., id, ph, or both
+  updatedAt     DateTime @updatedAt
+}
+
+model Shortlink {
+  id           String   @id                      // Unique ID (e.g., sl-123456)
+  originalUrl  String
+  zoneId       String   @default("Global")
+  platform     String   @default("Direct")
+  market       String   @default("Universal")
+  generatedUrl String
+  createdAt    DateTime @default(now())
+}
