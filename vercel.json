@@ -1,17 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "server.ts",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "prisma/**",
-          "dist/**"
-        ]
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/api/(.*)",
@@ -26,10 +14,7 @@
       "dest": "/server.ts"
     }
   ],
-  "functions": {
-    "server.ts": {
-      "maxDuration": 60,
-      "memory": 1024
-    }
+  "env": {
+    "NODE_ENV": "production"
   }
 }
