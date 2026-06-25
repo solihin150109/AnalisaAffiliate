@@ -40,3 +40,6 @@ temp
 
 # Vercel
 .vercel
+
+tailwind.config.js
+postcss.config.js
