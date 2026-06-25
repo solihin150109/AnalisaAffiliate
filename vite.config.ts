@@ -17,6 +17,12 @@ export default defineConfig(() => {
     build: {
       outDir: 'dist',
       sourcemap: true,
+      rollupOptions: {
+        external: [],
+      },
+    },
+    css: {
+      postcss: './postcss.config.cjs', // Update path ke .cjs
     },
   };
 });
