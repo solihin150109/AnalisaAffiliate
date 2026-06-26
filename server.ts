@@ -7,7 +7,6 @@ import express from "express";
 import path from "path";
 import fs from "fs";
 import dotenv from "dotenv";
-import { createServer as createViteServer } from "vite";
 import { PrismaClient } from "@prisma/client";
 import { exec } from "child_process";
 import { fileURLToPath } from "url";
@@ -15,17 +14,13 @@ import { fileURLToPath } from "url";
 // Load environment variables
 dotenv.config();
 
-// ====== FILE PATH UTILITIES ======
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// ====== PRISMA CLIENT ======
-// Gunakan strategy connection pooling untuk Vercel
 const prisma = new PrismaClient({
   log: process.env.NODE_ENV === 'development' ? ['query', 'info', 'warn', 'error'] : ['error'],
 });
 
-// ====== EXPRESS APP ======
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -118,7 +113,7 @@ loadDataFromFile();
 
 // ====== PRISMA FUNCTIONS ======
 
-// Auto push schema (gunakan exec dengan timeout)
+// Auto push schema
 function pushPrismaSchema(): Promise<boolean> {
   return new Promise((resolve) => {
     if (!process.env.DATABASE_URL) {
@@ -127,7 +122,6 @@ function pushPrismaSchema(): Promise<boolean> {
     }
     console.log("[PRISMA-BOOT] Running auto-migration...");
     
-    // Gunakan timeout untuk Vercel (max 10 detik)
     const timeout = setTimeout(() => {
       console.warn("[PRISMA-BOOT] Schema push timeout, continuing...");
       resolve(false);
@@ -238,7 +232,6 @@ async function syncToPrismaDatabase() {
     ]);
 
     if (allZoneIds.size > 0) {
-      // Delete existing data
       await prisma.zoneReport.deleteMany({});
       
       const dataToInsert = Array.from(allZoneIds).map((zoneId: any) => {
@@ -294,7 +287,6 @@ async function loadFromPrismaDatabase() {
   try {
     console.log("[PRISMA-BOOT] Loading data from PostgreSQL...");
     
-    // Coba koneksi ke database
     try {
       await prisma.$connect();
       console.log("[PRISMA-BOOT] Database connected successfully!");
@@ -303,7 +295,6 @@ async function loadFromPrismaDatabase() {
       return;
     }
     
-    // Load exchange rate
     try {
       const settings = await prisma.globalSetting.findUnique({ where: { id: "default" } });
       if (settings) {
@@ -314,7 +305,6 @@ async function loadFromPrismaDatabase() {
       console.warn("[PRISMA-BOOT] Could not load exchange rate:", err);
     }
 
-    // Load shortlinks
     try {
       const dbShortlinks = await prisma.shortlink.findMany({
         orderBy: { createdAt: "desc" },
@@ -687,36 +677,9 @@ async function initializeApp() {
   console.log('🚀 INITIALIZING APPLICATION');
   console.log('='.repeat(60));
   
-  // 1. Push schema jika DATABASE_URL tersedia
   if (process.env.DATABASE_URL) {
     await pushPrismaSchema();
     await loadFromPrismaDatabase();
-  }
-  
-  // 2. Setup static files untuk production
-  if (process.env.NODE_ENV === "production") {
-    const distPath = path.join(process.cwd(), "dist");
-    if (fs.existsSync(distPath)) {
-      app.use(express.static(distPath));
-      app.get("*", (req, res) => {
-        res.sendFile(path.join(distPath, "index.html"));
-      });
-      console.log('[PRODUCTION] Serving static files');
-    } else {
-      console.warn('[PRODUCTION] dist folder not found');
-    }
-  } else {
-    // Development mode
-    try {
-      const vite = await createViteServer({
-        server: { middlewareMode: true },
-        appType: "spa",
-      });
-      app.use(vite.middlewares);
-      console.log('[DEVELOPMENT] Vite middleware mounted');
-    } catch (err) {
-      console.error('[DEVELOPMENT] Failed to mount Vite:', err);
-    }
   }
 
   console.log('='.repeat(60));
@@ -727,8 +690,6 @@ async function initializeApp() {
   console.log(`🔗 Shortlinks: ${shortlinks.length}`);
   console.log('='.repeat(60));
 }
-
-// ====== START ======
 
 // Jalankan inisialisasi (non-blocking untuk Vercel)
 initializeApp().catch((err) => {

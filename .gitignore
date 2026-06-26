@@ -1,8 +1,7 @@
-node_modules/
-build/
-dist/
-coverage/
+node_modules
+package-lock.json
+yarn.lock
+.env
 .DS_Store
-*.log
-.env*
-!.env.example
+dist
+.vercel
