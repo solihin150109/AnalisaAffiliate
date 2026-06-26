@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "start": "node server.js",
-    "vercel-build": "prisma generate && npm run build"
+    "start": "node server.ts",
+    "vercel-build": "prisma generate && npm run build",
+    "postinstall": "prisma generate"
   },
   "engines": {
     "node": "22.x"

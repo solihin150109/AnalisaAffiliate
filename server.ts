@@ -19,7 +19,11 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const prisma = new PrismaClient();
+// ====== PRISMA CLIENT ======
+// Gunakan strategy connection pooling untuk Vercel
+const prisma = new PrismaClient({
+  log: process.env.NODE_ENV === 'development' ? ['query', 'info', 'warn', 'error'] : ['error'],
+});
 
 // ====== EXPRESS APP ======
 const app = express();
@@ -27,7 +31,7 @@ const PORT = process.env.PORT || 3000;
 
 // ====== MIDDLEWARE ======
 
-// CORS Middleware
+// CORS
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
@@ -40,7 +44,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-// Logging Middleware (hanya di development)
+// Logging (hanya di development)
 if (process.env.NODE_ENV !== 'production') {
   app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
@@ -48,7 +52,7 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// Global Error Handler
+// ====== GLOBAL ERROR HANDLER ======
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error('[ERROR]', err);
   res.status(500).json({ 
@@ -59,109 +63,93 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 
 // ====== CONFIGURATION ======
 
-// Session Token
 const SESSION_TOKEN = "session-auth-token-web-consolidator-123";
-
-// In-memory data stores
 let shortlinks: any[] = [];
 let globalUsdRate = 16300;
 let uploadedFiles: any[] = [];
 
-// Admin credentials
 const getAdminCredentials = () => {
   const username = process.env.ADMIN_USERNAME || "admin";
   const password = process.env.ADMIN_PASSWORD || "password123";
   return { username, password };
 };
 
-// Log credentials on startup
 const creds = getAdminCredentials();
-console.log(`[AUTH-INFO] Credentials: User: "${creds.username}" | Pass: "${"*".repeat(creds.password.length)}"`);
+console.log(`[AUTH-INFO] User: "${creds.username}" | Pass: "${"*".repeat(creds.password.length)}"`);
 
 // ====== DATA PERSISTENCE ======
 
-// Gunakan /tmp untuk Vercel production
 const DATA_FILE = path.join(
   process.env.NODE_ENV === 'production' ? '/tmp' : process.cwd(),
   "dashboard_data.json"
 );
 
-console.log(`[DATA] Using data file: ${DATA_FILE}`);
+console.log(`[DATA] File: ${DATA_FILE}`);
 
-// Load data dari file
 function loadDataFromFile() {
   try {
     if (fs.existsSync(DATA_FILE)) {
       const rawData = fs.readFileSync(DATA_FILE, "utf-8");
       const data = JSON.parse(rawData);
-      if (Array.isArray(data.shortlinks)) {
-        shortlinks = data.shortlinks;
-        console.log(`[DATA] Loaded ${shortlinks.length} shortlinks`);
-      }
-      if (typeof data.globalUsdRate === "number") {
-        globalUsdRate = data.globalUsdRate;
-        console.log(`[DATA] Loaded exchange rate: ${globalUsdRate}`);
-      }
-      if (Array.isArray(data.uploadedFiles)) {
-        uploadedFiles = data.uploadedFiles;
-        console.log(`[DATA] Loaded ${uploadedFiles.length} uploaded files`);
-      }
+      if (Array.isArray(data.shortlinks)) shortlinks = data.shortlinks;
+      if (typeof data.globalUsdRate === "number") globalUsdRate = data.globalUsdRate;
+      if (Array.isArray(data.uploadedFiles)) uploadedFiles = data.uploadedFiles;
+      console.log('[DATA] Loaded from file');
     }
   } catch (err) {
-    console.error("[DATA] Failed to load from file:", err);
+    console.error('[DATA] Failed to load:', err);
   }
 }
 
-// Save data ke file
 function saveDataToFile() {
   try {
-    // Pastikan direktori ada (khusus untuk /tmp di Vercel)
     const dir = path.dirname(DATA_FILE);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
-    fs.writeFileSync(
-      DATA_FILE, 
-      JSON.stringify({ shortlinks, globalUsdRate, uploadedFiles }, null, 2), 
-      "utf-8"
-    );
-    console.log(`[DATA] Saved to file: ${DATA_FILE}`);
+    fs.writeFileSync(DATA_FILE, JSON.stringify({ shortlinks, globalUsdRate, uploadedFiles }, null, 2));
+    console.log('[DATA] Saved to file');
   } catch (err) {
-    console.error("[DATA] Failed to save to file:", err);
+    console.error('[DATA] Failed to save:', err);
   }
 }
 
-// Load data saat startup
 loadDataFromFile();
 
-// ====== PRISMA DATABASE FUNCTIONS ======
+// ====== PRISMA FUNCTIONS ======
 
-// Auto push schema to database
+// Auto push schema (gunakan exec dengan timeout)
 function pushPrismaSchema(): Promise<boolean> {
   return new Promise((resolve) => {
     if (!process.env.DATABASE_URL) {
-      console.warn("[PRISMA-BOOT] DATABASE_URL is not defined. Skipping database schema setup.");
+      console.warn("[PRISMA-BOOT] DATABASE_URL not defined. Skipping schema setup.");
       return resolve(false);
     }
-    console.log("[PRISMA-BOOT] DATABASE_URL found. Running auto-migration...");
-    exec("npx prisma db push --accept-data-loss", (error, stdout, stderr) => {
+    console.log("[PRISMA-BOOT] Running auto-migration...");
+    
+    // Gunakan timeout untuk Vercel (max 10 detik)
+    const timeout = setTimeout(() => {
+      console.warn("[PRISMA-BOOT] Schema push timeout, continuing...");
+      resolve(false);
+    }, 10000);
+
+    exec("npx prisma db push --accept-data-loss --skip-generate", (error, stdout, stderr) => {
+      clearTimeout(timeout);
       if (error) {
-        console.error("[PRISMA-BOOT] Schema push failed:", error);
-        console.error("[PRISMA-BOOT] Stderr:", stderr);
+        console.error("[PRISMA-BOOT] Schema push failed:", error.message);
         resolve(false);
       } else {
         console.log("[PRISMA-BOOT] Schema pushed successfully!");
-        console.log(stdout);
         resolve(true);
       }
     });
   });
 }
 
-// Sync uploaded files to Prisma database
+// Sync to Prisma
 async function syncToPrismaDatabase() {
   if (!process.env.DATABASE_URL) {
-    console.warn("[PRISMA-SYNC] DATABASE_URL is not defined. Skipping sync.");
+    console.warn("[PRISMA-SYNC] DATABASE_URL not defined. Skipping sync.");
     return;
   }
   
@@ -249,9 +237,10 @@ async function syncToPrismaDatabase() {
       ...Object.keys(idTemp)
     ]);
 
-    await prisma.zoneReport.deleteMany({});
-
     if (allZoneIds.size > 0) {
+      // Delete existing data
+      await prisma.zoneReport.deleteMany({});
+      
       const dataToInsert = Array.from(allZoneIds).map((zoneId: any) => {
         const stats = statsTemp[zoneId] || {};
         const impressions = parseInt(stats.impressions) || 0;
@@ -298,35 +287,52 @@ async function syncToPrismaDatabase() {
   }
 }
 
-// Load data from Prisma database
+// Load from Prisma
 async function loadFromPrismaDatabase() {
   if (!process.env.DATABASE_URL) return;
   
   try {
     console.log("[PRISMA-BOOT] Loading data from PostgreSQL...");
     
+    // Coba koneksi ke database
+    try {
+      await prisma.$connect();
+      console.log("[PRISMA-BOOT] Database connected successfully!");
+    } catch (connErr) {
+      console.error("[PRISMA-BOOT] Database connection failed:", connErr);
+      return;
+    }
+    
     // Load exchange rate
-    const settings = await prisma.globalSetting.findUnique({ where: { id: "default" } });
-    if (settings) {
-      globalUsdRate = settings.exchangeRate;
-      console.log(`[PRISMA-BOOT] Loaded Exchange Rate: ${globalUsdRate}`);
+    try {
+      const settings = await prisma.globalSetting.findUnique({ where: { id: "default" } });
+      if (settings) {
+        globalUsdRate = settings.exchangeRate;
+        console.log(`[PRISMA-BOOT] Loaded Exchange Rate: ${globalUsdRate}`);
+      }
+    } catch (err) {
+      console.warn("[PRISMA-BOOT] Could not load exchange rate:", err);
     }
 
     // Load shortlinks
-    const dbShortlinks = await prisma.shortlink.findMany({
-      orderBy: { createdAt: "desc" },
-    });
-    if (dbShortlinks && dbShortlinks.length > 0) {
-      shortlinks = dbShortlinks.map((sl: any) => ({
-        id: sl.id,
-        originalUrl: sl.originalUrl,
-        zoneId: sl.zoneId,
-        platform: sl.platform,
-        market: sl.market,
-        shortlink: sl.generatedUrl,
-        createdAt: sl.createdAt.toISOString(),
-      }));
-      console.log(`[PRISMA-BOOT] Loaded ${dbShortlinks.length} shortlinks.`);
+    try {
+      const dbShortlinks = await prisma.shortlink.findMany({
+        orderBy: { createdAt: "desc" },
+      });
+      if (dbShortlinks && dbShortlinks.length > 0) {
+        shortlinks = dbShortlinks.map((sl: any) => ({
+          id: sl.id,
+          originalUrl: sl.originalUrl,
+          zoneId: sl.zoneId,
+          platform: sl.platform,
+          market: sl.market,
+          shortlink: sl.generatedUrl,
+          createdAt: sl.createdAt.toISOString(),
+        }));
+        console.log(`[PRISMA-BOOT] Loaded ${dbShortlinks.length} shortlinks.`);
+      }
+    } catch (err) {
+      console.warn("[PRISMA-BOOT] Could not load shortlinks:", err);
     }
 
     await syncToPrismaDatabase();
@@ -340,29 +346,28 @@ async function loadFromPrismaDatabase() {
 const requireAuth = (req: express.Request, res: express.Response, next: express.NextFunction) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || authHeader !== `Bearer ${SESSION_TOKEN}`) {
-    res.status(401).json({ error: "Unauthorized session access." });
-    return;
+    return res.status(401).json({ error: "Unauthorized" });
   }
   next();
 };
 
 // ====== API ENDPOINTS ======
 
-// HEALTH CHECK
+// Health Check
 app.get("/api/health", (req, res) => {
   res.json({ 
     status: "OK", 
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development',
     database: process.env.DATABASE_URL ? "Configured" : "Not Configured",
-    uptime: process.uptime()
+    files: uploadedFiles.length,
+    shortlinks: shortlinks.length
   });
 });
 
 // Login
 app.post("/api/auth/login", (req, res) => {
   console.log('[AUTH] Login attempt');
-  console.log('[AUTH] Body:', req.body);
   
   try {
     const { username, password } = req.body;
@@ -376,21 +381,19 @@ app.post("/api/auth/login", (req, res) => {
 
     if (username === target.username && password === target.password) {
       console.log('[AUTH] ✅ Login successful');
-      res.json({ 
+      return res.json({ 
         success: true, 
         token: SESSION_TOKEN 
       });
     } else {
       console.log('[AUTH] ❌ Login failed');
-      res.status(401).json({ 
-        error: "Invalid username or password credentials." 
+      return res.status(401).json({ 
+        error: "Invalid credentials" 
       });
     }
   } catch (error) {
     console.error('[AUTH] Error:', error);
-    res.status(500).json({ 
-      error: "Internal server error during authentication" 
-    });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -399,10 +402,7 @@ app.get("/api/auth/status", (req, res) => {
   try {
     const authHeader = req.headers.authorization;
     if (authHeader === `Bearer ${SESSION_TOKEN}`) {
-      res.json({ 
-        authenticated: true, 
-        username: getAdminCredentials().username 
-      });
+      res.json({ authenticated: true, username: getAdminCredentials().username });
     } else {
       res.json({ authenticated: false });
     }
@@ -429,7 +429,6 @@ app.post("/api/config", requireAuth, async (req, res) => {
       globalUsdRate = usdToIdrRate;
       saveDataToFile();
 
-      // Save to database if configured
       if (process.env.DATABASE_URL) {
         try {
           await prisma.globalSetting.upsert({
@@ -437,7 +436,7 @@ app.post("/api/config", requireAuth, async (req, res) => {
             update: { exchangeRate: usdToIdrRate },
             create: { id: "default", exchangeRate: usdToIdrRate },
           });
-          console.log("[PRISMA-SYNC] Exchange rate saved to database.");
+          console.log("[PRISMA-SYNC] Exchange rate saved.");
         } catch (err) {
           console.error("[PRISMA-SYNC] Failed to save exchange rate:", err);
         }
@@ -455,12 +454,7 @@ app.post("/api/config", requireAuth, async (req, res) => {
 
 // Shortlinks
 app.get("/api/shortlinks", requireAuth, (req, res) => {
-  try {
-    res.json(shortlinks);
-  } catch (error) {
-    console.error('[SHORTLINKS] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
-  }
+  res.json(shortlinks);
 });
 
 app.post("/api/shortlinks", requireAuth, async (req, res) => {
@@ -484,7 +478,6 @@ app.post("/api/shortlinks", requireAuth, async (req, res) => {
     shortlinks.unshift(payload);
     saveDataToFile();
 
-    // Save to database if configured
     if (process.env.DATABASE_URL) {
       try {
         await prisma.shortlink.create({
@@ -498,7 +491,7 @@ app.post("/api/shortlinks", requireAuth, async (req, res) => {
             createdAt: new Date(payload.createdAt),
           }
         });
-        console.log("[PRISMA-SYNC] Shortlink saved to database.");
+        console.log("[PRISMA-SYNC] Shortlink saved.");
       } catch (err) {
         console.error("[PRISMA-SYNC] Failed to save shortlink:", err);
       }
@@ -513,12 +506,7 @@ app.post("/api/shortlinks", requireAuth, async (req, res) => {
 
 // Uploads
 app.get("/api/uploads", requireAuth, (req, res) => {
-  try {
-    res.json(uploadedFiles);
-  } catch (error) {
-    console.error('[UPLOADS] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
-  }
+  res.json(uploadedFiles);
 });
 
 app.post("/api/uploads", requireAuth, async (req, res) => {
@@ -651,13 +639,12 @@ app.delete("/api/zones/:zoneId", requireAuth, async (req, res) => {
 
     saveDataToFile();
 
-    // Delete from database
     if (process.env.DATABASE_URL) {
       try {
         await prisma.zoneReport.deleteMany({
           where: { zoneId: cleanZoneId }
         });
-        console.log(`[PRISMA-SYNC] Purged zone ${cleanZoneId} from database.`);
+        console.log(`[PRISMA-SYNC] Purged zone ${cleanZoneId}.`);
       } catch (err) {
         console.error(`[PRISMA-SYNC] Failed to delete zone:`, err);
       }
@@ -690,7 +677,6 @@ app.get("/r", (req, res) => {
 
 // 404 Handler
 app.use((req, res) => {
-  console.log('[404] Not found:', req.url);
   res.status(404).json({ error: "Endpoint not found" });
 });
 
@@ -701,13 +687,13 @@ async function initializeApp() {
   console.log('🚀 INITIALIZING APPLICATION');
   console.log('='.repeat(60));
   
-  // 1. Push schema to database if configured
+  // 1. Push schema jika DATABASE_URL tersedia
   if (process.env.DATABASE_URL) {
     await pushPrismaSchema();
     await loadFromPrismaDatabase();
   }
   
-  // 2. Setup static files for production
+  // 2. Setup static files untuk production
   if (process.env.NODE_ENV === "production") {
     const distPath = path.join(process.cwd(), "dist");
     if (fs.existsSync(distPath)) {
@@ -715,12 +701,12 @@ async function initializeApp() {
       app.get("*", (req, res) => {
         res.sendFile(path.join(distPath, "index.html"));
       });
-      console.log('[PRODUCTION] Serving static files from:', distPath);
+      console.log('[PRODUCTION] Serving static files');
     } else {
-      console.warn('[PRODUCTION] dist folder not found, serving API only');
+      console.warn('[PRODUCTION] dist folder not found');
     }
   } else {
-    // Development mode with Vite
+    // Development mode
     try {
       const vite = await createViteServer({
         server: { middlewareMode: true },
@@ -734,21 +720,19 @@ async function initializeApp() {
   }
 
   console.log('='.repeat(60));
-  console.log(`✅ Application initialized successfully`);
+  console.log(`✅ Application initialized`);
   console.log(`🔐 Username: ${getAdminCredentials().username}`);
-  console.log(`🔐 Password: ${getAdminCredentials().password}`);
   console.log(`📁 Data file: ${DATA_FILE}`);
-  console.log(`📊 Uploaded files: ${uploadedFiles.length}`);
+  console.log(`📊 Files: ${uploadedFiles.length}`);
   console.log(`🔗 Shortlinks: ${shortlinks.length}`);
-  console.log(`💱 Exchange rate: ${globalUsdRate}`);
   console.log('='.repeat(60));
 }
 
-// ====== START APPLICATION ======
+// ====== START ======
 
-// Jalankan inisialisasi (tidak blocking untuk Vercel)
+// Jalankan inisialisasi (non-blocking untuk Vercel)
 initializeApp().catch((err) => {
-  console.error('❌ Failed to initialize application:', err);
+  console.error('❌ Initialization error:', err);
 });
 
 // ====== EXPORT FOR VERCEL ======
@@ -759,6 +743,5 @@ if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`✅ Server running at http://0.0.0.0:${PORT}`);
     console.log(`🔗 Health: http://localhost:${PORT}/api/health`);
-    console.log(`🔗 Config: http://localhost:${PORT}/api/config`);
   });
 }
