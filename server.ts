@@ -1,21 +1,33 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 import express from "express";
-import dotenv from "dotenv";
-import { fileURLToPath } from "url";
 import path from "path";
 import fs from "fs";
+import dotenv from "dotenv";
+import { createServer as createViteServer } from "vite";
+import { PrismaClient } from "@prisma/client";
+import { exec } from "child_process";
+import { fileURLToPath } from "url";
 
 // Load environment variables
 dotenv.config();
 
+// ====== FILE PATH UTILITIES ======
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const prisma = new PrismaClient();
+
+// ====== EXPRESS APP ======
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ====== MIDDLEWARE ======
 
-// CORS
+// CORS Middleware
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
@@ -28,7 +40,7 @@ app.use((req, res, next) => {
 
 app.use(express.json());
 
-// Logging (hanya di development)
+// Logging Middleware (hanya di development)
 if (process.env.NODE_ENV !== 'production') {
   app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
@@ -36,13 +48,39 @@ if (process.env.NODE_ENV !== 'production') {
   });
 }
 
-// ====== CONFIG ======
+// Global Error Handler
+app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
+  console.error('[ERROR]', err);
+  res.status(500).json({ 
+    error: err.message || 'Internal Server Error',
+    stack: process.env.NODE_ENV === 'development' ? err.stack : undefined
+  });
+});
 
+// ====== CONFIGURATION ======
+
+// Session Token
 const SESSION_TOKEN = "session-auth-token-web-consolidator-123";
-const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
-const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "password123";
 
-// Gunakan /tmp untuk Vercel
+// In-memory data stores
+let shortlinks: any[] = [];
+let globalUsdRate = 16300;
+let uploadedFiles: any[] = [];
+
+// Admin credentials
+const getAdminCredentials = () => {
+  const username = process.env.ADMIN_USERNAME || "admin";
+  const password = process.env.ADMIN_PASSWORD || "password123";
+  return { username, password };
+};
+
+// Log credentials on startup
+const creds = getAdminCredentials();
+console.log(`[AUTH-INFO] Credentials: User: "${creds.username}" | Pass: "${"*".repeat(creds.password.length)}"`);
+
+// ====== DATA PERSISTENCE ======
+
+// Gunakan /tmp untuk Vercel production
 const DATA_FILE = path.join(
   process.env.NODE_ENV === 'production' ? '/tmp' : process.cwd(),
   "dashboard_data.json"
@@ -50,106 +88,321 @@ const DATA_FILE = path.join(
 
 console.log(`[DATA] Using data file: ${DATA_FILE}`);
 
-// ====== DATA PERSISTENCE ======
-
-let shortlinks = [];
-let uploadedFiles = [];
-let globalUsdRate = 16300;
-
-// Load data dari file (jika ada)
-function loadData() {
+// Load data dari file
+function loadDataFromFile() {
   try {
     if (fs.existsSync(DATA_FILE)) {
       const rawData = fs.readFileSync(DATA_FILE, "utf-8");
       const data = JSON.parse(rawData);
-      if (Array.isArray(data.shortlinks)) shortlinks = data.shortlinks;
-      if (typeof data.globalUsdRate === "number") globalUsdRate = data.globalUsdRate;
-      if (Array.isArray(data.uploadedFiles)) uploadedFiles = data.uploadedFiles;
-      console.log('[DATA] Loaded from file');
+      if (Array.isArray(data.shortlinks)) {
+        shortlinks = data.shortlinks;
+        console.log(`[DATA] Loaded ${shortlinks.length} shortlinks`);
+      }
+      if (typeof data.globalUsdRate === "number") {
+        globalUsdRate = data.globalUsdRate;
+        console.log(`[DATA] Loaded exchange rate: ${globalUsdRate}`);
+      }
+      if (Array.isArray(data.uploadedFiles)) {
+        uploadedFiles = data.uploadedFiles;
+        console.log(`[DATA] Loaded ${uploadedFiles.length} uploaded files`);
+      }
     }
   } catch (err) {
-    console.error('[DATA] Failed to load:', err);
+    console.error("[DATA] Failed to load from file:", err);
   }
 }
 
 // Save data ke file
-function saveData() {
+function saveDataToFile() {
   try {
-    // Pastikan direktori ada
+    // Pastikan direktori ada (khusus untuk /tmp di Vercel)
     const dir = path.dirname(DATA_FILE);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
-    fs.writeFileSync(DATA_FILE, JSON.stringify({ shortlinks, globalUsdRate, uploadedFiles }, null, 2));
-    console.log('[DATA] Saved to file');
+    fs.writeFileSync(
+      DATA_FILE, 
+      JSON.stringify({ shortlinks, globalUsdRate, uploadedFiles }, null, 2), 
+      "utf-8"
+    );
+    console.log(`[DATA] Saved to file: ${DATA_FILE}`);
   } catch (err) {
-    console.error('[DATA] Failed to save:', err);
+    console.error("[DATA] Failed to save to file:", err);
   }
 }
 
 // Load data saat startup
-loadData();
+loadDataFromFile();
 
-// ====== AUTH ======
+// ====== PRISMA DATABASE FUNCTIONS ======
 
-const requireAuth = (req, res, next) => {
+// Auto push schema to database
+function pushPrismaSchema(): Promise<boolean> {
+  return new Promise((resolve) => {
+    if (!process.env.DATABASE_URL) {
+      console.warn("[PRISMA-BOOT] DATABASE_URL is not defined. Skipping database schema setup.");
+      return resolve(false);
+    }
+    console.log("[PRISMA-BOOT] DATABASE_URL found. Running auto-migration...");
+    exec("npx prisma db push --accept-data-loss", (error, stdout, stderr) => {
+      if (error) {
+        console.error("[PRISMA-BOOT] Schema push failed:", error);
+        console.error("[PRISMA-BOOT] Stderr:", stderr);
+        resolve(false);
+      } else {
+        console.log("[PRISMA-BOOT] Schema pushed successfully!");
+        console.log(stdout);
+        resolve(true);
+      }
+    });
+  });
+}
+
+// Sync uploaded files to Prisma database
+async function syncToPrismaDatabase() {
+  if (!process.env.DATABASE_URL) {
+    console.warn("[PRISMA-SYNC] DATABASE_URL is not defined. Skipping sync.");
+    return;
+  }
+  
+  try {
+    console.log("[PRISMA-SYNC] Starting synchronization...");
+    
+    let statsTemp: Record<string, any> = {};
+    let clicksTemp: Record<string, number> = {};
+    let phTemp: Record<string, { commissionUsd: number }> = {};
+    let idTemp: Record<string, { commissionIdr: number }> = {};
+    let platformsTemp: Record<string, string> = {};
+    let marketsTemp: Record<string, Set<string>> = {};
+
+    const sortedFiles = [...uploadedFiles].reverse();
+
+    sortedFiles.forEach(file => {
+      const type = file.fileType;
+      
+      if (type === "stats") {
+        file.data.forEach((row: any) => {
+          statsTemp[row.zoneId] = row;
+          platformsTemp[row.zoneId] = file.platform || "PropellerAds";
+        });
+      }
+      else if (type === "clicks") {
+        file.data.forEach((row: any) => {
+          clicksTemp[row.zoneId] = (clicksTemp[row.zoneId] || 0) + (row.clicks || 0);
+        });
+      }
+      else if (type === "shopee_ph") {
+        file.data.forEach((row: any) => {
+          if (!phTemp[row.zoneId]) {
+            phTemp[row.zoneId] = { commissionUsd: 0 };
+          }
+          phTemp[row.zoneId].commissionUsd += (row.earningsUsd || 0);
+          if (!marketsTemp[row.zoneId]) marketsTemp[row.zoneId] = new Set();
+          marketsTemp[row.zoneId].add("ph");
+        });
+      }
+      else if (type === "shopee_id") {
+        file.data.forEach((row: any) => {
+          if (!idTemp[row.zoneId]) {
+            idTemp[row.zoneId] = { commissionIdr: 0 };
+          }
+          idTemp[row.zoneId].commissionIdr += (row.commissionIdr || 0);
+          if (!marketsTemp[row.zoneId]) marketsTemp[row.zoneId] = new Set();
+          marketsTemp[row.zoneId].add("id");
+        });
+      }
+      else if (type === "manual") {
+        file.data.forEach((row: any) => {
+          statsTemp[row.zoneId] = {
+            zoneId: row.zoneId,
+            impressions: parseInt(row.impressions) || 0,
+            clicks: parseInt(row.statsClicks) || parseInt(row.clicks) || 0,
+            costUsd: parseFloat(row.costUsd) || 0.0,
+            spend: parseFloat(row.costUsd) || 0.0,
+          };
+          platformsTemp[row.zoneId] = row.platform || "PropellerAds";
+          clicksTemp[row.zoneId] = (clicksTemp[row.zoneId] || 0) + (parseInt(row.clicks) || 0);
+          
+          if (!marketsTemp[row.zoneId]) marketsTemp[row.zoneId] = new Set();
+          if (row.market) {
+            if (row.market.toLowerCase().includes("id")) marketsTemp[row.zoneId].add("id");
+            if (row.market.toLowerCase().includes("ph")) marketsTemp[row.zoneId].add("ph");
+          }
+          
+          if (row.commissionUsd) {
+            if (!phTemp[row.zoneId]) phTemp[row.zoneId] = { commissionUsd: 0 };
+            phTemp[row.zoneId].commissionUsd += parseFloat(row.commissionUsd) || 0.0;
+          }
+          
+          if (row.commissionIdr) {
+            if (!idTemp[row.zoneId]) idTemp[row.zoneId] = { commissionIdr: 0 };
+            idTemp[row.zoneId].commissionIdr += parseFloat(row.commissionIdr) || 0.0;
+          }
+        });
+      }
+    });
+
+    const allZoneIds = new Set([
+      ...Object.keys(statsTemp),
+      ...Object.keys(clicksTemp),
+      ...Object.keys(phTemp),
+      ...Object.keys(idTemp)
+    ]);
+
+    await prisma.zoneReport.deleteMany({});
+
+    if (allZoneIds.size > 0) {
+      const dataToInsert = Array.from(allZoneIds).map((zoneId: any) => {
+        const stats = statsTemp[zoneId] || {};
+        const impressions = parseInt(stats.impressions) || 0;
+        const statsClicks = parseInt(stats.clicks) || 0;
+        const trackerClicks = clicksTemp[zoneId] || 0;
+        const costUsd = parseFloat(stats.costUsd || stats.spend) || 0.0;
+        const commissionUsd = phTemp[zoneId]?.commissionUsd || 0.0;
+        const commissionIdr = idTemp[zoneId]?.commissionIdr || 0.0;
+        const platformTag = platformsTemp[zoneId] || "PropellerAds";
+        
+        const marketSet = marketsTemp[zoneId];
+        let marketTag = "unmatched";
+        if (marketSet) {
+          if (marketSet.has("id") && marketSet.has("ph")) {
+            marketTag = "id + ph";
+          } else if (marketSet.has("id")) {
+            marketTag = "id";
+          } else if (marketSet.has("ph")) {
+            marketTag = "ph";
+          }
+        }
+
+        return {
+          zoneId,
+          impressions,
+          statsClicks,
+          trackerClicks,
+          costUsd,
+          commissionUsd,
+          commissionIdr,
+          platformTag,
+          marketTag,
+        };
+      });
+
+      await prisma.zoneReport.createMany({
+        data: dataToInsert
+      });
+    }
+
+    console.log(`[PRISMA-SYNC] Sync successful! ${allZoneIds.size} zones synchronized.`);
+  } catch (syncErr) {
+    console.error("[PRISMA-SYNC] Error:", syncErr);
+  }
+}
+
+// Load data from Prisma database
+async function loadFromPrismaDatabase() {
+  if (!process.env.DATABASE_URL) return;
+  
+  try {
+    console.log("[PRISMA-BOOT] Loading data from PostgreSQL...");
+    
+    // Load exchange rate
+    const settings = await prisma.globalSetting.findUnique({ where: { id: "default" } });
+    if (settings) {
+      globalUsdRate = settings.exchangeRate;
+      console.log(`[PRISMA-BOOT] Loaded Exchange Rate: ${globalUsdRate}`);
+    }
+
+    // Load shortlinks
+    const dbShortlinks = await prisma.shortlink.findMany({
+      orderBy: { createdAt: "desc" },
+    });
+    if (dbShortlinks && dbShortlinks.length > 0) {
+      shortlinks = dbShortlinks.map((sl: any) => ({
+        id: sl.id,
+        originalUrl: sl.originalUrl,
+        zoneId: sl.zoneId,
+        platform: sl.platform,
+        market: sl.market,
+        shortlink: sl.generatedUrl,
+        createdAt: sl.createdAt.toISOString(),
+      }));
+      console.log(`[PRISMA-BOOT] Loaded ${dbShortlinks.length} shortlinks.`);
+    }
+
+    await syncToPrismaDatabase();
+  } catch (err) {
+    console.warn("[PRISMA-BOOT] Warning loading from database:", err);
+  }
+}
+
+// ====== AUTH MIDDLEWARE ======
+
+const requireAuth = (req: express.Request, res: express.Response, next: express.NextFunction) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || authHeader !== `Bearer ${SESSION_TOKEN}`) {
-    return res.status(401).json({ error: "Unauthorized" });
+    res.status(401).json({ error: "Unauthorized session access." });
+    return;
   }
   next();
 };
 
 // ====== API ENDPOINTS ======
 
-// HEALTH
+// HEALTH CHECK
 app.get("/api/health", (req, res) => {
   res.json({ 
     status: "OK", 
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development',
-    database: process.env.DATABASE_URL ? "Configured" : "Not Configured"
+    database: process.env.DATABASE_URL ? "Configured" : "Not Configured",
+    uptime: process.uptime()
   });
 });
 
-// LOGIN
+// Login
 app.post("/api/auth/login", (req, res) => {
   console.log('[AUTH] Login attempt');
+  console.log('[AUTH] Body:', req.body);
   
   try {
     const { username, password } = req.body;
-    
+    const target = getAdminCredentials();
+
     if (!username || !password) {
       return res.status(400).json({ error: "Username and password required" });
     }
 
-    // Log untuk debugging (tidak menampilkan password)
-    console.log(`[AUTH] Attempt: ${username} | Expected: ${ADMIN_USERNAME}`);
+    console.log(`[AUTH] Attempt: ${username} | Expected: ${target.username}`);
 
-    if (username === ADMIN_USERNAME && password === ADMIN_PASSWORD) {
+    if (username === target.username && password === target.password) {
       console.log('[AUTH] ✅ Login successful');
-      return res.json({ 
+      res.json({ 
         success: true, 
         token: SESSION_TOKEN 
       });
     } else {
       console.log('[AUTH] ❌ Login failed');
-      return res.status(401).json({ 
-        error: "Invalid credentials" 
+      res.status(401).json({ 
+        error: "Invalid username or password credentials." 
       });
     }
   } catch (error) {
     console.error('[AUTH] Error:', error);
-    return res.status(500).json({ error: "Internal server error" });
+    res.status(500).json({ 
+      error: "Internal server error during authentication" 
+    });
   }
 });
 
-// AUTH STATUS
+// Auth Status
 app.get("/api/auth/status", (req, res) => {
   try {
     const authHeader = req.headers.authorization;
     if (authHeader === `Bearer ${SESSION_TOKEN}`) {
-      res.json({ authenticated: true, username: ADMIN_USERNAME });
+      res.json({ 
+        authenticated: true, 
+        username: getAdminCredentials().username 
+      });
     } else {
       res.json({ authenticated: false });
     }
@@ -159,7 +412,7 @@ app.get("/api/auth/status", (req, res) => {
   }
 });
 
-// CONFIG
+// Config
 app.get("/api/config", (req, res) => {
   try {
     res.json({ usdToIdrRate: globalUsdRate });
@@ -169,12 +422,27 @@ app.get("/api/config", (req, res) => {
   }
 });
 
-app.post("/api/config", requireAuth, (req, res) => {
+app.post("/api/config", requireAuth, async (req, res) => {
   try {
     const { usdToIdrRate } = req.body;
     if (typeof usdToIdrRate === "number" && usdToIdrRate > 0) {
       globalUsdRate = usdToIdrRate;
-      saveData();
+      saveDataToFile();
+
+      // Save to database if configured
+      if (process.env.DATABASE_URL) {
+        try {
+          await prisma.globalSetting.upsert({
+            where: { id: "default" },
+            update: { exchangeRate: usdToIdrRate },
+            create: { id: "default", exchangeRate: usdToIdrRate },
+          });
+          console.log("[PRISMA-SYNC] Exchange rate saved to database.");
+        } catch (err) {
+          console.error("[PRISMA-SYNC] Failed to save exchange rate:", err);
+        }
+      }
+
       res.json({ success: true, usdToIdrRate });
     } else {
       res.status(400).json({ error: "Invalid exchange rate" });
@@ -185,15 +453,20 @@ app.post("/api/config", requireAuth, (req, res) => {
   }
 });
 
-// SHORTLINKS
+// Shortlinks
 app.get("/api/shortlinks", requireAuth, (req, res) => {
-  res.json(shortlinks);
+  try {
+    res.json(shortlinks);
+  } catch (error) {
+    console.error('[SHORTLINKS] Error:', error);
+    res.status(500).json({ error: "Internal server error" });
+  }
 });
 
-app.post("/api/shortlinks", requireAuth, (req, res) => {
+app.post("/api/shortlinks", requireAuth, async (req, res) => {
   try {
     const { originalUrl, zoneId, platform, market, shortlink } = req.body;
-    
+
     if (!originalUrl || !shortlink) {
       return res.status(400).json({ error: "Missing required fields" });
     }
@@ -209,7 +482,28 @@ app.post("/api/shortlinks", requireAuth, (req, res) => {
     };
 
     shortlinks.unshift(payload);
-    saveData();
+    saveDataToFile();
+
+    // Save to database if configured
+    if (process.env.DATABASE_URL) {
+      try {
+        await prisma.shortlink.create({
+          data: {
+            id: payload.id,
+            originalUrl: payload.originalUrl,
+            zoneId: payload.zoneId,
+            platform: payload.platform,
+            market: payload.market,
+            generatedUrl: payload.shortlink,
+            createdAt: new Date(payload.createdAt),
+          }
+        });
+        console.log("[PRISMA-SYNC] Shortlink saved to database.");
+      } catch (err) {
+        console.error("[PRISMA-SYNC] Failed to save shortlink:", err);
+      }
+    }
+
     res.status(201).json(payload);
   } catch (error) {
     console.error('[SHORTLINKS] Error:', error);
@@ -217,12 +511,17 @@ app.post("/api/shortlinks", requireAuth, (req, res) => {
   }
 });
 
-// UPLOADS
+// Uploads
 app.get("/api/uploads", requireAuth, (req, res) => {
-  res.json(uploadedFiles);
+  try {
+    res.json(uploadedFiles);
+  } catch (error) {
+    console.error('[UPLOADS] Error:', error);
+    res.status(500).json({ error: "Internal server error" });
+  }
 });
 
-app.post("/api/uploads", requireAuth, (req, res) => {
+app.post("/api/uploads", requireAuth, async (req, res) => {
   try {
     const { filename, fileType, rowCount, platform, data } = req.body;
 
@@ -241,7 +540,10 @@ app.post("/api/uploads", requireAuth, (req, res) => {
     };
 
     uploadedFiles.unshift(payload);
-    saveData();
+    saveDataToFile();
+
+    await syncToPrismaDatabase();
+
     res.status(201).json(uploadedFiles);
   } catch (error) {
     console.error('[UPLOADS] Error:', error);
@@ -249,17 +551,19 @@ app.post("/api/uploads", requireAuth, (req, res) => {
   }
 });
 
-app.delete("/api/uploads/:id", requireAuth, (req, res) => {
+app.delete("/api/uploads/:id", requireAuth, async (req, res) => {
   try {
     const { id } = req.params;
     const initialLength = uploadedFiles.length;
-    uploadedFiles = uploadedFiles.filter((item) => item.id !== id);
+    uploadedFiles = uploadedFiles.filter((item: any) => item.id !== id);
 
     if (uploadedFiles.length === initialLength) {
       return res.status(404).json({ error: "File not found" });
     }
 
-    saveData();
+    saveDataToFile();
+    await syncToPrismaDatabase();
+
     res.json({ success: true, files: uploadedFiles });
   } catch (error) {
     console.error('[UPLOADS] Error:', error);
@@ -267,8 +571,8 @@ app.delete("/api/uploads/:id", requireAuth, (req, res) => {
   }
 });
 
-// MANUAL ENTRY
-app.post("/api/manual-entry", requireAuth, (req, res) => {
+// Manual Entry
+app.post("/api/manual-entry", requireAuth, async (req, res) => {
   try {
     const { zoneId, platform, market, impressions, clicks, costUsd, commissionIdr, commissionUsd, orders } = req.body;
 
@@ -302,7 +606,7 @@ app.post("/api/manual-entry", requireAuth, (req, res) => {
       };
       uploadedFiles.unshift(manualFile);
     } else {
-      const idx = manualFile.data.findIndex((item) => item.zoneId === entry.zoneId);
+      const idx = manualFile.data.findIndex((item: any) => item.zoneId === entry.zoneId);
       if (idx !== -1) {
         manualFile.data[idx] = { ...manualFile.data[idx], ...entry };
       } else {
@@ -312,7 +616,9 @@ app.post("/api/manual-entry", requireAuth, (req, res) => {
       manualFile.rowCount = manualFile.data.length;
     }
 
-    saveData();
+    saveDataToFile();
+    await syncToPrismaDatabase();
+
     res.json({ success: true, files: uploadedFiles });
   } catch (error) {
     console.error('[MANUAL] Error:', error);
@@ -320,10 +626,11 @@ app.post("/api/manual-entry", requireAuth, (req, res) => {
   }
 });
 
-// DELETE ZONE
-app.delete("/api/zones/:zoneId", requireAuth, (req, res) => {
+// Delete Zone
+app.delete("/api/zones/:zoneId", requireAuth, async (req, res) => {
   try {
     const { zoneId } = req.params;
+
     if (!zoneId) {
       return res.status(400).json({ error: "Missing zoneId" });
     }
@@ -331,9 +638,9 @@ app.delete("/api/zones/:zoneId", requireAuth, (req, res) => {
     const cleanZoneId = String(zoneId).trim();
     let totalPurgedCount = 0;
     
-    uploadedFiles = uploadedFiles.map((file) => {
+    uploadedFiles = uploadedFiles.map((file: any) => {
       const originalLength = file.data.length;
-      const filteredData = file.data.filter((item) => String(item.zoneId).trim() !== cleanZoneId);
+      const filteredData = file.data.filter((item: any) => String(item.zoneId).trim() !== cleanZoneId);
       totalPurgedCount += (originalLength - filteredData.length);
       return {
         ...file,
@@ -342,7 +649,22 @@ app.delete("/api/zones/:zoneId", requireAuth, (req, res) => {
       };
     });
 
-    saveData();
+    saveDataToFile();
+
+    // Delete from database
+    if (process.env.DATABASE_URL) {
+      try {
+        await prisma.zoneReport.deleteMany({
+          where: { zoneId: cleanZoneId }
+        });
+        console.log(`[PRISMA-SYNC] Purged zone ${cleanZoneId} from database.`);
+      } catch (err) {
+        console.error(`[PRISMA-SYNC] Failed to delete zone:`, err);
+      }
+    }
+
+    await syncToPrismaDatabase();
+
     res.json({ success: true, files: uploadedFiles, totalPurgedCount });
   } catch (error) {
     console.error('[ZONE] Error:', error);
@@ -350,7 +672,7 @@ app.delete("/api/zones/:zoneId", requireAuth, (req, res) => {
   }
 });
 
-// REDIRECT
+// Redirect
 app.get("/r", (req, res) => {
   try {
     const { url, sub1, sub2, market } = req.query;
@@ -366,26 +688,77 @@ app.get("/r", (req, res) => {
   }
 });
 
-// 404
+// 404 Handler
 app.use((req, res) => {
+  console.log('[404] Not found:', req.url);
   res.status(404).json({ error: "Endpoint not found" });
 });
 
-// ====== START ======
+// ====== INITIALIZATION ======
 
-// Untuk Vercel: export app
+async function initializeApp() {
+  console.log('='.repeat(60));
+  console.log('🚀 INITIALIZING APPLICATION');
+  console.log('='.repeat(60));
+  
+  // 1. Push schema to database if configured
+  if (process.env.DATABASE_URL) {
+    await pushPrismaSchema();
+    await loadFromPrismaDatabase();
+  }
+  
+  // 2. Setup static files for production
+  if (process.env.NODE_ENV === "production") {
+    const distPath = path.join(process.cwd(), "dist");
+    if (fs.existsSync(distPath)) {
+      app.use(express.static(distPath));
+      app.get("*", (req, res) => {
+        res.sendFile(path.join(distPath, "index.html"));
+      });
+      console.log('[PRODUCTION] Serving static files from:', distPath);
+    } else {
+      console.warn('[PRODUCTION] dist folder not found, serving API only');
+    }
+  } else {
+    // Development mode with Vite
+    try {
+      const vite = await createViteServer({
+        server: { middlewareMode: true },
+        appType: "spa",
+      });
+      app.use(vite.middlewares);
+      console.log('[DEVELOPMENT] Vite middleware mounted');
+    } catch (err) {
+      console.error('[DEVELOPMENT] Failed to mount Vite:', err);
+    }
+  }
+
+  console.log('='.repeat(60));
+  console.log(`✅ Application initialized successfully`);
+  console.log(`🔐 Username: ${getAdminCredentials().username}`);
+  console.log(`🔐 Password: ${getAdminCredentials().password}`);
+  console.log(`📁 Data file: ${DATA_FILE}`);
+  console.log(`📊 Uploaded files: ${uploadedFiles.length}`);
+  console.log(`🔗 Shortlinks: ${shortlinks.length}`);
+  console.log(`💱 Exchange rate: ${globalUsdRate}`);
+  console.log('='.repeat(60));
+}
+
+// ====== START APPLICATION ======
+
+// Jalankan inisialisasi (tidak blocking untuk Vercel)
+initializeApp().catch((err) => {
+  console.error('❌ Failed to initialize application:', err);
+});
+
+// ====== EXPORT FOR VERCEL ======
 export default app;
 
-// Untuk local: start server
+// ====== LOCAL DEVELOPMENT ======
 if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, "0.0.0.0", () => {
-    console.log('='.repeat(60));
     console.log(`✅ Server running at http://0.0.0.0:${PORT}`);
     console.log(`🔗 Health: http://localhost:${PORT}/api/health`);
     console.log(`🔗 Config: http://localhost:${PORT}/api/config`);
-    console.log('='.repeat(60));
-    console.log(`🔐 Username: ${ADMIN_USERNAME}`);
-    console.log(`🔐 Password: ${ADMIN_PASSWORD}`);
-    console.log('='.repeat(60));
   });
 }
