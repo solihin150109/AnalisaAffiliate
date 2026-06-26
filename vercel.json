@@ -3,18 +3,15 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/server.ts"
+      "dest": "/server.js"
     },
     {
       "src": "/r",
-      "dest": "/server.ts"
+      "dest": "/server.js"
     },
     {
       "src": "/(.*)",
-      "dest": "/server.ts"
+      "dest": "/server.js"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  }
+  ]
 }
