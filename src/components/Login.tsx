@@ -135,15 +135,6 @@ export default function Login({ onLoginSuccess }: LoginProps) {
             <span>{loading ? "Authenticating..." : "Sign In to Dashboard"}</span>
           </button>
         </form>
-
-        {/* Demo Assistant Guidance */}
-        <div className="mt-8 pt-6 border-t border-slate-100 dark:border-slate-800 text-center">
-          <p className="text-xs text-slate-400 dark:text-slate-500">
-            Uses secure environment configuration parameters.<br />
-            To log in, use credentials configured in the environment,<br /> or default credentials: <strong className="text-blue-500 dark:text-blue-400 font-mono">admin</strong> / <strong className="text-blue-500 dark:text-blue-400 font-mono">password123</strong>.
-          </p>
-        </div>
-
       </div>
     </div>
   );

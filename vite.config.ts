@@ -13,6 +13,16 @@ export default defineConfig(() => {
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3000',
+          changeOrigin: true,
+        },
+        '/r': {
+          target: 'http://localhost:3000',
+          changeOrigin: true,
+        },
+      },
     },
     build: {
       outDir: 'dist',
@@ -22,7 +32,7 @@ export default defineConfig(() => {
       },
     },
     css: {
-      postcss: './postcss.config.cjs', // Update path ke .cjs
+      postcss: './postcss.config.cjs',
     },
   };
 });
