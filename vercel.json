@@ -6,13 +6,10 @@
       "use": "@vercel/node",
       "config": {
         "includeFiles": [
-          "prisma/**"
+          "prisma/**",
+          "dist/**"
         ]
       }
-    },
-    {
-      "src": "dist/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -26,7 +23,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/dist/$1"
+      "dest": "/server.ts"
     }
   ]
 }
