@@ -7,26 +7,30 @@ import express from "express";
 import path from "path";
 import fs from "fs";
 import dotenv from "dotenv";
+import { createServer as createViteServer } from "vite";
 import { PrismaClient } from "@prisma/client";
 import { exec } from "child_process";
 import { fileURLToPath } from "url";
 
-// Load environment variables
+// ====== LOAD ENVIRONMENT VARIABLES ======
 dotenv.config();
 
+// ====== FILE PATH UTILITIES ======
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// ====== PRISMA CLIENT ======
 const prisma = new PrismaClient({
   log: process.env.NODE_ENV === 'development' ? ['query', 'info', 'warn', 'error'] : ['error'],
 });
 
+// ====== EXPRESS APP ======
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = parseInt(process.env.PORT || '3000', 10);
 
 // ====== MIDDLEWARE ======
 
-// CORS
+// CORS Middleware
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
@@ -37,9 +41,10 @@ app.use((req, res, next) => {
   next();
 });
 
+// JSON Parser
 app.use(express.json());
 
-// Logging (hanya di development)
+// Logging Middleware (hanya di development)
 if (process.env.NODE_ENV !== 'production') {
   app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
@@ -58,69 +63,90 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 
 // ====== CONFIGURATION ======
 
+// Session Token
 const SESSION_TOKEN = "session-auth-token-web-consolidator-123";
+
+// In-memory data stores
 let shortlinks: any[] = [];
 let globalUsdRate = 16300;
 let uploadedFiles: any[] = [];
 
+// Admin credentials
 const getAdminCredentials = () => {
   const username = process.env.ADMIN_USERNAME || "admin";
   const password = process.env.ADMIN_PASSWORD || "password123";
   return { username, password };
 };
 
+// Log credentials on startup
 const creds = getAdminCredentials();
-console.log(`[AUTH-INFO] User: "${creds.username}" | Pass: "${"*".repeat(creds.password.length)}"`);
+console.log(`[AUTH-INFO] Credentials: User: "${creds.username}" | Pass: "${"*".repeat(creds.password.length)}"`);
 
 // ====== DATA PERSISTENCE ======
 
+// Gunakan /tmp untuk Vercel production
 const DATA_FILE = path.join(
   process.env.NODE_ENV === 'production' ? '/tmp' : process.cwd(),
   "dashboard_data.json"
 );
 
-console.log(`[DATA] File: ${DATA_FILE}`);
+console.log(`[DATA] Using data file: ${DATA_FILE}`);
 
+// Load data dari file
 function loadDataFromFile() {
   try {
     if (fs.existsSync(DATA_FILE)) {
       const rawData = fs.readFileSync(DATA_FILE, "utf-8");
       const data = JSON.parse(rawData);
-      if (Array.isArray(data.shortlinks)) shortlinks = data.shortlinks;
-      if (typeof data.globalUsdRate === "number") globalUsdRate = data.globalUsdRate;
-      if (Array.isArray(data.uploadedFiles)) uploadedFiles = data.uploadedFiles;
-      console.log('[DATA] Loaded from file');
+      if (Array.isArray(data.shortlinks)) {
+        shortlinks = data.shortlinks;
+        console.log(`[DATA] Loaded ${shortlinks.length} shortlinks`);
+      }
+      if (typeof data.globalUsdRate === "number") {
+        globalUsdRate = data.globalUsdRate;
+        console.log(`[DATA] Loaded exchange rate: ${globalUsdRate}`);
+      }
+      if (Array.isArray(data.uploadedFiles)) {
+        uploadedFiles = data.uploadedFiles;
+        console.log(`[DATA] Loaded ${uploadedFiles.length} uploaded files`);
+      }
     }
   } catch (err) {
-    console.error('[DATA] Failed to load:', err);
+    console.error("[DATA] Failed to load from file:", err);
   }
 }
 
+// Save data ke file
 function saveDataToFile() {
   try {
     const dir = path.dirname(DATA_FILE);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
-    fs.writeFileSync(DATA_FILE, JSON.stringify({ shortlinks, globalUsdRate, uploadedFiles }, null, 2));
-    console.log('[DATA] Saved to file');
+    fs.writeFileSync(
+      DATA_FILE, 
+      JSON.stringify({ shortlinks, globalUsdRate, uploadedFiles }, null, 2), 
+      "utf-8"
+    );
+    console.log(`[DATA] Saved to file: ${DATA_FILE}`);
   } catch (err) {
-    console.error('[DATA] Failed to save:', err);
+    console.error("[DATA] Failed to save to file:", err);
   }
 }
 
+// Load data saat startup
 loadDataFromFile();
 
-// ====== PRISMA FUNCTIONS ======
+// ====== PRISMA DATABASE FUNCTIONS ======
 
-// Auto push schema
+// Auto push schema to database
 function pushPrismaSchema(): Promise<boolean> {
   return new Promise((resolve) => {
     if (!process.env.DATABASE_URL) {
-      console.warn("[PRISMA-BOOT] DATABASE_URL not defined. Skipping schema setup.");
+      console.warn("[PRISMA-BOOT] DATABASE_URL is not defined. Skipping database schema setup.");
       return resolve(false);
     }
-    console.log("[PRISMA-BOOT] Running auto-migration...");
+    console.log("[PRISMA-BOOT] DATABASE_URL found. Running auto-migration...");
     
     const timeout = setTimeout(() => {
       console.warn("[PRISMA-BOOT] Schema push timeout, continuing...");
@@ -131,19 +157,21 @@ function pushPrismaSchema(): Promise<boolean> {
       clearTimeout(timeout);
       if (error) {
         console.error("[PRISMA-BOOT] Schema push failed:", error.message);
+        console.error("[PRISMA-BOOT] Stderr:", stderr);
         resolve(false);
       } else {
         console.log("[PRISMA-BOOT] Schema pushed successfully!");
+        console.log(stdout);
         resolve(true);
       }
     });
   });
 }
 
-// Sync to Prisma
+// Sync uploaded files to Prisma database
 async function syncToPrismaDatabase() {
   if (!process.env.DATABASE_URL) {
-    console.warn("[PRISMA-SYNC] DATABASE_URL not defined. Skipping sync.");
+    console.warn("[PRISMA-SYNC] DATABASE_URL is not defined. Skipping sync.");
     return;
   }
   
@@ -231,9 +259,9 @@ async function syncToPrismaDatabase() {
       ...Object.keys(idTemp)
     ]);
 
+    await prisma.zoneReport.deleteMany({});
+
     if (allZoneIds.size > 0) {
-      await prisma.zoneReport.deleteMany({});
-      
       const dataToInsert = Array.from(allZoneIds).map((zoneId: any) => {
         const stats = statsTemp[zoneId] || {};
         const impressions = parseInt(stats.impressions) || 0;
@@ -280,13 +308,14 @@ async function syncToPrismaDatabase() {
   }
 }
 
-// Load from Prisma
+// Load data from Prisma database
 async function loadFromPrismaDatabase() {
   if (!process.env.DATABASE_URL) return;
   
   try {
     console.log("[PRISMA-BOOT] Loading data from PostgreSQL...");
     
+    // Test connection
     try {
       await prisma.$connect();
       console.log("[PRISMA-BOOT] Database connected successfully!");
@@ -295,6 +324,7 @@ async function loadFromPrismaDatabase() {
       return;
     }
     
+    // Load exchange rate
     try {
       const settings = await prisma.globalSetting.findUnique({ where: { id: "default" } });
       if (settings) {
@@ -305,6 +335,7 @@ async function loadFromPrismaDatabase() {
       console.warn("[PRISMA-BOOT] Could not load exchange rate:", err);
     }
 
+    // Load shortlinks
     try {
       const dbShortlinks = await prisma.shortlink.findMany({
         orderBy: { createdAt: "desc" },
@@ -336,7 +367,7 @@ async function loadFromPrismaDatabase() {
 const requireAuth = (req: express.Request, res: express.Response, next: express.NextFunction) => {
   const authHeader = req.headers.authorization;
   if (!authHeader || authHeader !== `Bearer ${SESSION_TOKEN}`) {
-    return res.status(401).json({ error: "Unauthorized" });
+    return res.status(401).json({ error: "Unauthorized session access." });
   }
   next();
 };
@@ -350,6 +381,7 @@ app.get("/api/health", (req, res) => {
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV || 'development',
     database: process.env.DATABASE_URL ? "Configured" : "Not Configured",
+    uptime: process.uptime(),
     files: uploadedFiles.length,
     shortlinks: shortlinks.length
   });
@@ -358,6 +390,7 @@ app.get("/api/health", (req, res) => {
 // Login
 app.post("/api/auth/login", (req, res) => {
   console.log('[AUTH] Login attempt');
+  console.log('[AUTH] Body:', req.body);
   
   try {
     const { username, password } = req.body;
@@ -378,12 +411,14 @@ app.post("/api/auth/login", (req, res) => {
     } else {
       console.log('[AUTH] ❌ Login failed');
       return res.status(401).json({ 
-        error: "Invalid credentials" 
+        error: "Invalid username or password credentials." 
       });
     }
   } catch (error) {
     console.error('[AUTH] Error:', error);
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ 
+      error: "Internal server error during authentication" 
+    });
   }
 });
 
@@ -392,23 +427,26 @@ app.get("/api/auth/status", (req, res) => {
   try {
     const authHeader = req.headers.authorization;
     if (authHeader === `Bearer ${SESSION_TOKEN}`) {
-      res.json({ authenticated: true, username: getAdminCredentials().username });
+      return res.json({ 
+        authenticated: true, 
+        username: getAdminCredentials().username 
+      });
     } else {
-      res.json({ authenticated: false });
+      return res.json({ authenticated: false });
     }
   } catch (error) {
     console.error('[AUTH] Status error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
 // Config
 app.get("/api/config", (req, res) => {
   try {
-    res.json({ usdToIdrRate: globalUsdRate });
+    return res.json({ usdToIdrRate: globalUsdRate });
   } catch (error) {
     console.error('[CONFIG] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -426,25 +464,30 @@ app.post("/api/config", requireAuth, async (req, res) => {
             update: { exchangeRate: usdToIdrRate },
             create: { id: "default", exchangeRate: usdToIdrRate },
           });
-          console.log("[PRISMA-SYNC] Exchange rate saved.");
+          console.log("[PRISMA-SYNC] Exchange rate saved to database.");
         } catch (err) {
           console.error("[PRISMA-SYNC] Failed to save exchange rate:", err);
         }
       }
 
-      res.json({ success: true, usdToIdrRate });
+      return res.json({ success: true, usdToIdrRate });
     } else {
-      res.status(400).json({ error: "Invalid exchange rate" });
+      return res.status(400).json({ error: "Invalid exchange rate" });
     }
   } catch (error) {
     console.error('[CONFIG] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
 // Shortlinks
 app.get("/api/shortlinks", requireAuth, (req, res) => {
-  res.json(shortlinks);
+  try {
+    return res.json(shortlinks);
+  } catch (error) {
+    console.error('[SHORTLINKS] Error:', error);
+    return res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 app.post("/api/shortlinks", requireAuth, async (req, res) => {
@@ -452,7 +495,7 @@ app.post("/api/shortlinks", requireAuth, async (req, res) => {
     const { originalUrl, zoneId, platform, market, shortlink } = req.body;
 
     if (!originalUrl || !shortlink) {
-      return res.status(400).json({ error: "Missing required fields" });
+      return res.status(400).json({ error: "Missing required shortlink elements." });
     }
 
     const payload = {
@@ -481,22 +524,27 @@ app.post("/api/shortlinks", requireAuth, async (req, res) => {
             createdAt: new Date(payload.createdAt),
           }
         });
-        console.log("[PRISMA-SYNC] Shortlink saved.");
+        console.log("[PRISMA-SYNC] Shortlink saved to database.");
       } catch (err) {
         console.error("[PRISMA-SYNC] Failed to save shortlink:", err);
       }
     }
 
-    res.status(201).json(payload);
+    return res.status(201).json(payload);
   } catch (error) {
     console.error('[SHORTLINKS] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
 // Uploads
 app.get("/api/uploads", requireAuth, (req, res) => {
-  res.json(uploadedFiles);
+  try {
+    return res.json(uploadedFiles);
+  } catch (error) {
+    console.error('[UPLOADS] Error:', error);
+    return res.status(500).json({ error: "Internal server error" });
+  }
 });
 
 app.post("/api/uploads", requireAuth, async (req, res) => {
@@ -504,7 +552,7 @@ app.post("/api/uploads", requireAuth, async (req, res) => {
     const { filename, fileType, rowCount, platform, data } = req.body;
 
     if (!filename || !fileType || !Array.isArray(data)) {
-      return res.status(400).json({ error: "Missing required fields" });
+      return res.status(400).json({ error: "Missing required file elements." });
     }
 
     const payload = {
@@ -522,10 +570,10 @@ app.post("/api/uploads", requireAuth, async (req, res) => {
 
     await syncToPrismaDatabase();
 
-    res.status(201).json(uploadedFiles);
+    return res.status(201).json(uploadedFiles);
   } catch (error) {
     console.error('[UPLOADS] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -536,16 +584,16 @@ app.delete("/api/uploads/:id", requireAuth, async (req, res) => {
     uploadedFiles = uploadedFiles.filter((item: any) => item.id !== id);
 
     if (uploadedFiles.length === initialLength) {
-      return res.status(404).json({ error: "File not found" });
+      return res.status(404).json({ error: "File record not found." });
     }
 
     saveDataToFile();
     await syncToPrismaDatabase();
 
-    res.json({ success: true, files: uploadedFiles });
+    return res.json({ success: true, files: uploadedFiles });
   } catch (error) {
     console.error('[UPLOADS] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -555,7 +603,7 @@ app.post("/api/manual-entry", requireAuth, async (req, res) => {
     const { zoneId, platform, market, impressions, clicks, costUsd, commissionIdr, commissionUsd, orders } = req.body;
 
     if (!zoneId) {
-      return res.status(400).json({ error: "Zone ID required" });
+      return res.status(400).json({ error: "Zone ID is required for manual entry." });
     }
 
     const cleanZoneId = String(zoneId).trim();
@@ -597,10 +645,10 @@ app.post("/api/manual-entry", requireAuth, async (req, res) => {
     saveDataToFile();
     await syncToPrismaDatabase();
 
-    res.json({ success: true, files: uploadedFiles });
+    return res.json({ success: true, files: uploadedFiles });
   } catch (error) {
     console.error('[MANUAL] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -610,7 +658,7 @@ app.delete("/api/zones/:zoneId", requireAuth, async (req, res) => {
     const { zoneId } = req.params;
 
     if (!zoneId) {
-      return res.status(400).json({ error: "Missing zoneId" });
+      return res.status(400).json({ error: "Missing zoneId parameter." });
     }
 
     const cleanZoneId = String(zoneId).trim();
@@ -634,7 +682,7 @@ app.delete("/api/zones/:zoneId", requireAuth, async (req, res) => {
         await prisma.zoneReport.deleteMany({
           where: { zoneId: cleanZoneId }
         });
-        console.log(`[PRISMA-SYNC] Purged zone ${cleanZoneId}.`);
+        console.log(`[PRISMA-SYNC] Purged zone ${cleanZoneId} from database.`);
       } catch (err) {
         console.error(`[PRISMA-SYNC] Failed to delete zone:`, err);
       }
@@ -642,10 +690,10 @@ app.delete("/api/zones/:zoneId", requireAuth, async (req, res) => {
 
     await syncToPrismaDatabase();
 
-    res.json({ success: true, files: uploadedFiles, totalPurgedCount });
+    return res.json({ success: true, files: uploadedFiles, totalPurgedCount });
   } catch (error) {
     console.error('[ZONE] Error:', error);
-    res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ error: "Internal server error" });
   }
 });
 
@@ -655,22 +703,53 @@ app.get("/r", (req, res) => {
     const { url, sub1, sub2, market } = req.query;
     if (typeof url === "string" && url) {
       console.log(`[TRACKING] Zone: ${sub1} | Platform: ${sub2} | Market: ${market} -> ${url}`);
-      res.redirect(url);
+      return res.redirect(url);
     } else {
-      res.status(400).send("<h3>Invalid Redirect: URL parameter missing</h3>");
+      return res.status(400).send("<h3>Invalid Redirect: URL destination parameter is missing from tracking request.</h3>");
     }
   } catch (error) {
     console.error('[REDIRECT] Error:', error);
-    res.status(500).send("<h3>Internal server error</h3>");
+    return res.status(500).send("<h3>Internal server error</h3>");
   }
 });
 
-// ====== ROOT ENDPOINT ======
+// ====== SERVE STATIC FILES (FRONTEND) - HARUS SEBELUM ROOT ENDPOINT ======
+if (process.env.NODE_ENV === "production") {
+  const distPath = path.join(process.cwd(), "dist");
+  console.log('[PRODUCTION] Dist path:', distPath);
+  console.log('[PRODUCTION] Dist exists:', fs.existsSync(distPath));
+  
+  if (fs.existsSync(distPath)) {
+    // Serve static files
+    app.use(express.static(distPath));
+    console.log('[PRODUCTION] ✅ Serving static files from:', distPath);
+    
+    // SPA fallback - untuk semua route non-API
+    app.get("*", (req, res) => {
+      // Jangan override API routes
+      if (!req.path.startsWith("/api/") && req.path !== "/r") {
+        const indexPath = path.join(distPath, "index.html");
+        if (fs.existsSync(indexPath)) {
+          return res.sendFile(indexPath);
+        } else {
+          return res.status(404).json({ error: "Frontend not found" });
+        }
+      }
+    });
+  } else {
+    console.warn('[PRODUCTION] ⚠️ dist folder not found at:', distPath);
+  }
+}
+
+// ====== ROOT ENDPOINT (Fallback jika static files tidak ada) ======
 app.get("/", (req, res) => {
-  res.json({
+  // Jika static files ditemukan, Express sudah handle index.html
+  // Jika sampai sini, berarti static files tidak ditemukan
+  return res.json({
     name: "Affiliate Analytics API",
     version: "1.0.0",
     status: "running",
+    message: "Frontend not found. Please build the frontend.",
     endpoints: {
       health: "/api/health",
       config: "/api/config",
@@ -685,36 +764,10 @@ app.get("/", (req, res) => {
   });
 });
 
-// ====== SERVE STATIC FILES (Frontend) ======
-if (process.env.NODE_ENV === "production") {
-  const distPath = path.join(process.cwd(), "dist");
-  if (fs.existsSync(distPath)) {
-    console.log('[PRODUCTION] Serving static files from:', distPath);
-    
-    // Serve static files
-    app.use(express.static(distPath));
-    
-    // Catch-all untuk SPA routing
-    app.get("*", (req, res) => {
-      // Jangan override API routes
-      if (!req.path.startsWith("/api/") && req.path !== "/r") {
-        const indexPath = path.join(distPath, "index.html");
-        if (fs.existsSync(indexPath)) {
-          res.sendFile(indexPath);
-        } else {
-          res.status(404).json({ error: "Frontend not found" });
-        }
-      }
-    });
-  } else {
-    console.warn('[PRODUCTION] dist folder not found at:', distPath);
-  }
-}
-
 // ====== 404 HANDLER ======
 app.use((req, res) => {
   console.log('[404] Not found:', req.method, req.url);
-  res.status(404).json({ 
+  return res.status(404).json({ 
     error: "Endpoint not found",
     path: req.url,
     method: req.method
@@ -728,23 +781,27 @@ async function initializeApp() {
   console.log('🚀 INITIALIZING APPLICATION');
   console.log('='.repeat(60));
   
+  // 1. Push schema to database if configured
   if (process.env.DATABASE_URL) {
     await pushPrismaSchema();
     await loadFromPrismaDatabase();
   }
 
   console.log('='.repeat(60));
-  console.log(`✅ Application initialized`);
+  console.log(`✅ Application initialized successfully`);
   console.log(`🔐 Username: ${getAdminCredentials().username}`);
   console.log(`📁 Data file: ${DATA_FILE}`);
-  console.log(`📊 Files: ${uploadedFiles.length}`);
+  console.log(`📊 Uploaded files: ${uploadedFiles.length}`);
   console.log(`🔗 Shortlinks: ${shortlinks.length}`);
+  console.log(`💱 Exchange rate: ${globalUsdRate}`);
   console.log('='.repeat(60));
 }
 
+// ====== START APPLICATION ======
+
 // Jalankan inisialisasi (non-blocking untuk Vercel)
 initializeApp().catch((err) => {
-  console.error('❌ Initialization error:', err);
+  console.error('❌ Failed to initialize application:', err);
 });
 
 // ====== EXPORT FOR VERCEL ======
@@ -752,10 +809,15 @@ export default app;
 
 // ====== LOCAL DEVELOPMENT ======
 if (process.env.NODE_ENV !== 'production') {
-  const PORT = parseInt(process.env.PORT || '3000', 10);
   app.listen(PORT, "0.0.0.0", () => {
+    console.log('='.repeat(60));
     console.log(`✅ Server running at http://0.0.0.0:${PORT}`);
     console.log(`🔗 Health: http://localhost:${PORT}/api/health`);
+    console.log(`🔗 Config: http://localhost:${PORT}/api/config`);
     console.log(`🌐 Frontend: http://localhost:${PORT}`);
+    console.log('='.repeat(60));
+    console.log(`🔐 Username: ${getAdminCredentials().username}`);
+    console.log(`🔐 Password: ${getAdminCredentials().password}`);
+    console.log('='.repeat(60));
   });
 }
