@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "start": "node server.ts",
-    "vercel-build": "prisma generate",
+    "vercel-build": "npm run build && prisma generate",
     "postinstall": "prisma generate"
   },
   "engines": {
@@ -30,10 +30,10 @@
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.0",
     "@vercel/node": "^3.2.0",
+    "@vercel/static": "^1.0.0",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
-    "typescript": "^5.0.0",
-    "rollup": "^4.0.0"
+    "typescript": "^5.0.0"
   }
 }

@@ -665,9 +665,60 @@ app.get("/r", (req, res) => {
   }
 });
 
-// 404 Handler
+// ====== ROOT ENDPOINT ======
+app.get("/", (req, res) => {
+  res.json({
+    name: "Affiliate Analytics API",
+    version: "1.0.0",
+    status: "running",
+    endpoints: {
+      health: "/api/health",
+      config: "/api/config",
+      login: "POST /api/auth/login",
+      authStatus: "/api/auth/status",
+      shortlinks: "/api/shortlinks",
+      uploads: "/api/uploads",
+      manualEntry: "POST /api/manual-entry",
+      zones: "DELETE /api/zones/:zoneId",
+      redirect: "/r?url=...&sub1=..."
+    }
+  });
+});
+
+// ====== SERVE STATIC FILES (Frontend) ======
+if (process.env.NODE_ENV === "production") {
+  const distPath = path.join(process.cwd(), "dist");
+  if (fs.existsSync(distPath)) {
+    console.log('[PRODUCTION] Serving static files from:', distPath);
+    
+    // Serve static files
+    app.use(express.static(distPath));
+    
+    // Catch-all untuk SPA routing
+    app.get("*", (req, res) => {
+      // Jangan override API routes
+      if (!req.path.startsWith("/api/") && req.path !== "/r") {
+        const indexPath = path.join(distPath, "index.html");
+        if (fs.existsSync(indexPath)) {
+          res.sendFile(indexPath);
+        } else {
+          res.status(404).json({ error: "Frontend not found" });
+        }
+      }
+    });
+  } else {
+    console.warn('[PRODUCTION] dist folder not found at:', distPath);
+  }
+}
+
+// ====== 404 HANDLER ======
 app.use((req, res) => {
-  res.status(404).json({ error: "Endpoint not found" });
+  console.log('[404] Not found:', req.method, req.url);
+  res.status(404).json({ 
+    error: "Endpoint not found",
+    path: req.url,
+    method: req.method
+  });
 });
 
 // ====== INITIALIZATION ======
@@ -704,5 +755,6 @@ if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, "0.0.0.0", () => {
     console.log(`✅ Server running at http://0.0.0.0:${PORT}`);
     console.log(`🔗 Health: http://localhost:${PORT}/api/health`);
+    console.log(`🌐 Frontend: http://localhost:${PORT}`);
   });
 }

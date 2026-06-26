@@ -9,6 +9,10 @@
           "prisma/**"
         ]
       }
+    },
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -22,7 +26,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/server.ts"
+      "dest": "/dist/$1"
     }
   ]
 }
