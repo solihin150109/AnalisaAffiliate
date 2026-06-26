@@ -752,7 +752,8 @@ export default app;
 
 // ====== LOCAL DEVELOPMENT ======
 if (process.env.NODE_ENV !== 'production') {
-  app.listen(Number(PORT), "0.0.0.0", () => {
+  const PORT = parseInt(process.env.PORT || '3000', 10);
+  app.listen(PORT, "0.0.0.0", () => {
     console.log(`✅ Server running at http://0.0.0.0:${PORT}`);
     console.log(`🔗 Health: http://localhost:${PORT}/api/health`);
     console.log(`🌐 Frontend: http://localhost:${PORT}`);
